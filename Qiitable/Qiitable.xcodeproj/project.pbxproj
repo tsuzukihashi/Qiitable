@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9123CCB02A00D528D6 /* AppDelegate.swift */; };
+		DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */; };
+		DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9523CCB02A00D528D6 /* ContentView.swift */; };
+		DA832B9823CCB02E00D528D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9723CCB02E00D528D6 /* Assets.xcassets */; };
+		DA832B9B23CCB02E00D528D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9A23CCB02E00D528D6 /* Preview Assets.xcassets */; };
+		DA832B9E23CCB02E00D528D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */; };
+		DA832BA923CCB02E00D528D6 /* QiitableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832BA823CCB02E00D528D6 /* QiitableTests.swift */; };
+		DA832BB423CCB02E00D528D6 /* QiitableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */; };
+		DA832BC223CCB03800D528D6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA832BC123CCB03700D528D6 /* .gitignore */; };
+		DA832BC423CCB03D00D528D6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA832BC323CCB03C00D528D6 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA832BA523CCB02E00D528D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA832B8623CCB02A00D528D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA832B8D23CCB02A00D528D6;
+			remoteInfo = Qiitable;
+		};
+		DA832BB023CCB02E00D528D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA832B8623CCB02A00D528D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA832B8D23CCB02A00D528D6;
+			remoteInfo = Qiitable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA832B8E23CCB02A00D528D6 /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA832B9123CCB02A00D528D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DA832B9523CCB02A00D528D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA832B9723CCB02E00D528D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA832B9A23CCB02E00D528D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA832B9D23CCB02E00D528D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA832B9F23CCB02E00D528D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA832BA423CCB02E00D528D6 /* QiitableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA832BA823CCB02E00D528D6 /* QiitableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitableTests.swift; sourceTree = "<group>"; };
+		DA832BAA23CCB02E00D528D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA832BAF23CCB02E00D528D6 /* QiitableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitableUITests.swift; sourceTree = "<group>"; };
+		DA832BB523CCB02E00D528D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA832BC123CCB03700D528D6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
+		DA832BC323CCB03C00D528D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA832B8B23CCB02A00D528D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BA123CCB02E00D528D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BAC23CCB02E00D528D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA832B8523CCB02A00D528D6 = {
+			isa = PBXGroup;
+			children = (
+				DA832BC323CCB03C00D528D6 /* README.md */,
+				DA832BC123CCB03700D528D6 /* .gitignore */,
+				DA832B9023CCB02A00D528D6 /* Qiitable */,
+				DA832BA723CCB02E00D528D6 /* QiitableTests */,
+				DA832BB223CCB02E00D528D6 /* QiitableUITests */,
+				DA832B8F23CCB02A00D528D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA832B8F23CCB02A00D528D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA832B8E23CCB02A00D528D6 /* Qiitable.app */,
+				DA832BA423CCB02E00D528D6 /* QiitableTests.xctest */,
+				DA832BAF23CCB02E00D528D6 /* QiitableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA832B9023CCB02A00D528D6 /* Qiitable */ = {
+			isa = PBXGroup;
+			children = (
+				DA832B9123CCB02A00D528D6 /* AppDelegate.swift */,
+				DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */,
+				DA832B9523CCB02A00D528D6 /* ContentView.swift */,
+				DA832B9723CCB02E00D528D6 /* Assets.xcassets */,
+				DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */,
+				DA832B9F23CCB02E00D528D6 /* Info.plist */,
+				DA832B9923CCB02E00D528D6 /* Preview Content */,
+			);
+			path = Qiitable;
+			sourceTree = "<group>";
+		};
+		DA832B9923CCB02E00D528D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA832B9A23CCB02E00D528D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA832BA723CCB02E00D528D6 /* QiitableTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA832BA823CCB02E00D528D6 /* QiitableTests.swift */,
+				DA832BAA23CCB02E00D528D6 /* Info.plist */,
+			);
+			path = QiitableTests;
+			sourceTree = "<group>";
+		};
+		DA832BB223CCB02E00D528D6 /* QiitableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */,
+				DA832BB523CCB02E00D528D6 /* Info.plist */,
+			);
+			path = QiitableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA832B8D23CCB02A00D528D6 /* Qiitable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA832BB823CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "Qiitable" */;
+			buildPhases = (
+				DA832B8A23CCB02A00D528D6 /* Sources */,
+				DA832B8B23CCB02A00D528D6 /* Frameworks */,
+				DA832B8C23CCB02A00D528D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qiitable;
+			productName = Qiitable;
+			productReference = DA832B8E23CCB02A00D528D6 /* Qiitable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA832BA323CCB02E00D528D6 /* QiitableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA832BBB23CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "QiitableTests" */;
+			buildPhases = (
+				DA832BA023CCB02E00D528D6 /* Sources */,
+				DA832BA123CCB02E00D528D6 /* Frameworks */,
+				DA832BA223CCB02E00D528D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA832BA623CCB02E00D528D6 /* PBXTargetDependency */,
+			);
+			name = QiitableTests;
+			productName = QiitableTests;
+			productReference = DA832BA423CCB02E00D528D6 /* QiitableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA832BAE23CCB02E00D528D6 /* QiitableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA832BBE23CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "QiitableUITests" */;
+			buildPhases = (
+				DA832BAB23CCB02E00D528D6 /* Sources */,
+				DA832BAC23CCB02E00D528D6 /* Frameworks */,
+				DA832BAD23CCB02E00D528D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA832BB123CCB02E00D528D6 /* PBXTargetDependency */,
+			);
+			name = QiitableUITests;
+			productName = QiitableUITests;
+			productReference = DA832BAF23CCB02E00D528D6 /* QiitableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA832B8623CCB02A00D528D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ryo Tsuzukihashi";
+				TargetAttributes = {
+					DA832B8D23CCB02A00D528D6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					DA832BA323CCB02E00D528D6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DA832B8D23CCB02A00D528D6;
+					};
+					DA832BAE23CCB02E00D528D6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = DA832B8D23CCB02A00D528D6;
+					};
+				};
+			};
+			buildConfigurationList = DA832B8923CCB02A00D528D6 /* Build configuration list for PBXProject "Qiitable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA832B8523CCB02A00D528D6;
+			productRefGroup = DA832B8F23CCB02A00D528D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA832B8D23CCB02A00D528D6 /* Qiitable */,
+				DA832BA323CCB02E00D528D6 /* QiitableTests */,
+				DA832BAE23CCB02E00D528D6 /* QiitableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA832B8C23CCB02A00D528D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA832BC223CCB03800D528D6 /* .gitignore in Resources */,
+				DA832B9E23CCB02E00D528D6 /* LaunchScreen.storyboard in Resources */,
+				DA832BC423CCB03D00D528D6 /* README.md in Resources */,
+				DA832B9B23CCB02E00D528D6 /* Preview Assets.xcassets in Resources */,
+				DA832B9823CCB02E00D528D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BA223CCB02E00D528D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BAD23CCB02E00D528D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA832B8A23CCB02A00D528D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
+				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
+				DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BA023CCB02E00D528D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA832BA923CCB02E00D528D6 /* QiitableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA832BAB23CCB02E00D528D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA832BB423CCB02E00D528D6 /* QiitableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA832BA623CCB02E00D528D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA832B8D23CCB02A00D528D6 /* Qiitable */;
+			targetProxy = DA832BA523CCB02E00D528D6 /* PBXContainerItemProxy */;
+		};
+		DA832BB123CCB02E00D528D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA832B8D23CCB02A00D528D6 /* Qiitable */;
+			targetProxy = DA832BB023CCB02E00D528D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA832B9D23CCB02E00D528D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA832BB623CCB02E00D528D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA832BB723CCB02E00D528D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA832BB923CCB02E00D528D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiitable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Qiitable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA832BBA23CCB02E00D528D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiitable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Qiitable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA832BBC23CCB02E00D528D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiitable.app/Qiitable";
+			};
+			name = Debug;
+		};
+		DA832BBD23CCB02E00D528D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiitable.app/Qiitable";
+			};
+			name = Release;
+		};
+		DA832BBF23CCB02E00D528D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qiitable;
+			};
+			name = Debug;
+		};
+		DA832BC023CCB02E00D528D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Qiitable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA832B8923CCB02A00D528D6 /* Build configuration list for PBXProject "Qiitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA832BB623CCB02E00D528D6 /* Debug */,
+				DA832BB723CCB02E00D528D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA832BB823CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "Qiitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA832BB923CCB02E00D528D6 /* Debug */,
+				DA832BBA23CCB02E00D528D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA832BBB23CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "QiitableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA832BBC23CCB02E00D528D6 /* Debug */,
+				DA832BBD23CCB02E00D528D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA832BBE23CCB02E00D528D6 /* Build configuration list for PBXNativeTarget "QiitableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA832BBF23CCB02E00D528D6 /* Debug */,
+				DA832BC023CCB02E00D528D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA832B8623CCB02A00D528D6 /* Project object */;
+}
