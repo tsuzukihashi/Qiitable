@@ -2,7 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Qiitable!")
+        ZStack {
+            Color.backgroundMain
+            Text("Hello, Qiitable!")
+        }
     }
 }
 

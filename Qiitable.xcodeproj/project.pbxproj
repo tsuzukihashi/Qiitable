@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA21E26F23CCB202003C3CCD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA21E26E23CCB202003C3CCD /* .gitignore */; };
 		DA21E27123CCB20A003C3CCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA21E27023CCB20A003C3CCD /* README.md */; };
+		DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */; };
+		DA21E27623CCB322003C3CCD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA21E27523CCB322003C3CCD /* Colors.xcassets */; };
 		DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9123CCB02A00D528D6 /* AppDelegate.swift */; };
 		DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */; };
 		DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9523CCB02A00D528D6 /* ContentView.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		DA21E26E23CCB202003C3CCD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA21E27023CCB20A003C3CCD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensioin.swift; sourceTree = "<group>"; };
+		DA21E27523CCB322003C3CCD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DA832B8E23CCB02A00D528D6 /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA832B9123CCB02A00D528D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA21E27223CCB2E5003C3CCD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA832B8523CCB02A00D528D6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +117,12 @@
 		DA832B9023CCB02A00D528D6 /* Qiitable */ = {
 			isa = PBXGroup;
 			children = (
+				DA21E27223CCB2E5003C3CCD /* Extensions */,
 				DA832B9123CCB02A00D528D6 /* AppDelegate.swift */,
 				DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */,
 				DA832B9523CCB02A00D528D6 /* ContentView.swift */,
 				DA832B9723CCB02E00D528D6 /* Assets.xcassets */,
+				DA21E27523CCB322003C3CCD /* Colors.xcassets */,
 				DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */,
 				DA832B9F23CCB02E00D528D6 /* Info.plist */,
 				DA832B9923CCB02E00D528D6 /* Preview Content */,
@@ -249,6 +263,7 @@
 				DA21E26F23CCB202003C3CCD /* .gitignore in Resources */,
 				DA832B9E23CCB02E00D528D6 /* LaunchScreen.storyboard in Resources */,
 				DA21E27123CCB20A003C3CCD /* README.md in Resources */,
+				DA21E27623CCB322003C3CCD /* Colors.xcassets in Resources */,
 				DA832B9B23CCB02E00D528D6 /* Preview Assets.xcassets in Resources */,
 				DA832B9823CCB02E00D528D6 /* Assets.xcassets in Resources */,
 			);
@@ -276,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
+				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
 				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
 				DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */,
 			);
