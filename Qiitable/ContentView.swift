@@ -5,6 +5,7 @@ struct ContentView: View {
         ZStack {
             Color.backgroundMain
             Text("Hello, Qiitable!")
+            CustomTabView()
         }
     }
 }
