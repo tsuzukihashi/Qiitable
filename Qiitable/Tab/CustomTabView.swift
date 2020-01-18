@@ -1,18 +1,12 @@
 import SwiftUI
 
 struct CustomTabView: View {
-    var height: CGFloat = 88
-    var color: Color = .gray
+    @State var height: CGFloat = 88
+    @State var color: Color = .gray
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                Rectangle()
-                    .foregroundColor(self.color)
-                    .frame(width: geometry.size.width, height: self.height)
-            }
-            .edgesIgnoringSafeArea(.bottom)
+        ZStack {
+            CustomTabBackground(height: $height, color: $color)
         }
     }
 }

@@ -20,6 +20,7 @@
 		DA832BA923CCB02E00D528D6 /* QiitableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832BA823CCB02E00D528D6 /* QiitableTests.swift */; };
 		DA832BB423CCB02E00D528D6 /* QiitableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */; };
 		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
+		DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitableUITests.swift; sourceTree = "<group>"; };
 		DA832BB523CCB02E00D528D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9D025923D36A590091CC4E /* CustomTabView.swift */,
+				DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
 				DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */,
 				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
+				DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */,
 				DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
