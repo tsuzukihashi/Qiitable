@@ -7,7 +7,6 @@ struct CustomTabView: View {
     var body: some View {
         ZStack {
             CustomTabBackground(height: $height, color: $color)
-
         }
     }
 }
