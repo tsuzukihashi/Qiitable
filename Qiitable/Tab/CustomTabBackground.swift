@@ -4,7 +4,13 @@ struct CustomTabBackground: View {
     @Binding var height: CGFloat
     @Binding var color: Color
     @State var count: Int = 5
-    @State var image: UIImage? = UIImage(systemName: "star")
+    @State var image: [UIImage?] = [
+        UIImage(systemName: "paperplane"),
+        UIImage(systemName: "paperclip"),
+        UIImage(systemName: "pencil"),
+        UIImage(systemName: "folder"),
+        UIImage(systemName: "trash")
+    ]
     
     var body: some View {
         GeometryReader { geometry in
@@ -17,7 +23,7 @@ struct CustomTabBackground: View {
                     HStack {
                         Spacer()
                         ForEach(0 ..< self.count) { (row: Int) in
-                            CustomTabItem(image: self.$image)
+                            CustomTabItem(image: self.$image[row])
                             Spacer()
                         }
                     }
