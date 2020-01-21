@@ -22,6 +22,7 @@
 		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
 		DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */; };
 		DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */; };
+		DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBackground.swift; sourceTree = "<group>"; };
 		DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
+		DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */,
 				DA832B9F23CCB02E00D528D6 /* Info.plist */,
 				DA832B9923CCB02E00D528D6 /* Preview Content */,
+				DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */,
 			);
 			path = Qiitable;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
 				DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */,
 				DA832B9623CCB02A00D528D6 /* ContentView.swift in Sources */,
+				DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
