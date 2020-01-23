@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */; };
 		DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */; };
 		DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */; };
+		DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DAC42C8B23DA37620088F3A4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +194,9 @@
 			dependencies = (
 			);
 			name = Qiitable;
+			packageProductDependencies = (
+				DAC42C8B23DA37620088F3A4 /* Alamofire */,
+			);
 			productName = Qiitable;
 			productReference = DA832B8E23CCB02A00D528D6 /* Qiitable.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +269,9 @@
 				Base,
 			);
 			mainGroup = DA832B8523CCB02A00D528D6;
+			packageReferences = (
+				DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DA832B8F23CCB02A00D528D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -644,6 +652,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAC42C8B23DA37620088F3A4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA832B8623CCB02A00D528D6 /* Project object */;
 }
