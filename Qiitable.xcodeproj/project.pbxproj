@@ -19,9 +19,9 @@
 		DA4A46FD23DC6A6000F9F6BC /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A46FC23DC6A6000F9F6BC /* ArticleView.swift */; };
 		DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A46FF23DC6C7100F9F6BC /* Fixtures.swift */; };
 		DA4A470323DC7CD400F9F6BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A470223DC7CD400F9F6BC /* HomeView.swift */; };
+		DA5E1B0323DC98570023E53A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E1B0223DC98570023E53A /* RootView.swift */; };
 		DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9123CCB02A00D528D6 /* AppDelegate.swift */; };
 		DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */; };
-		DA832B9623CCB02A00D528D6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9523CCB02A00D528D6 /* RootView.swift */; };
 		DA832B9823CCB02E00D528D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9723CCB02E00D528D6 /* Assets.xcassets */; };
 		DA832B9B23CCB02E00D528D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9A23CCB02E00D528D6 /* Preview Assets.xcassets */; };
 		DA832B9E23CCB02E00D528D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA832B9C23CCB02E00D528D6 /* LaunchScreen.storyboard */; };
@@ -68,10 +68,10 @@
 		DA4A46FC23DC6A6000F9F6BC /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		DA4A46FF23DC6C7100F9F6BC /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		DA4A470223DC7CD400F9F6BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA5E1B0223DC98570023E53A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DA832B8E23CCB02A00D528D6 /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA832B9123CCB02A00D528D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA832B9523CCB02A00D528D6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DA832B9723CCB02E00D528D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA832B9A23CCB02E00D528D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA832B9D23CCB02E00D528D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -310,7 +310,7 @@
 		DAF4648D23DC88670010A2D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DA832B9523CCB02A00D528D6 /* RootView.swift */,
+				DA5E1B0223DC98570023E53A /* RootView.swift */,
 				DAF4648C23DC883F0010A2D4 /* Common */,
 				DA4A470123DC7C9200F9F6BC /* Home */,
 				DA9D025B23D36A7C0091CC4E /* Tab */,
@@ -464,6 +464,7 @@
 				DA1AC3C423DC5C340003FF10 /* HomePresenter.swift in Sources */,
 				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
 				DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */,
+				DA5E1B0323DC98570023E53A /* RootView.swift in Sources */,
 				DA4A46FD23DC6A6000F9F6BC /* ArticleView.swift in Sources */,
 				DA1AC3C623DC5C820003FF10 /* HomePresenterImpl.swift in Sources */,
 				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
@@ -473,7 +474,6 @@
 				DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */,
 				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
 				DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */,
-				DA832B9623CCB02A00D528D6 /* RootView.swift in Sources */,
 				DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */,
 				DA1AC3BF23DC59AD0003FF10 /* APIError.swift in Sources */,
 				DA4A470323DC7CD400F9F6BC /* HomeView.swift in Sources */,
