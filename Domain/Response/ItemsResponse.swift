@@ -1,6 +1,6 @@
 import Foundation
 
-struct ItemResponse: Codable, Identifiable {
+struct ItemsResponse: Codable, Identifiable {
     let body : String?
     let coediting : Bool?
     let commentsCount : Int?
