@@ -6,7 +6,9 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(presenter.items.indices, id: \.self) { index in
-                ArticleView(items: self.$presenter.items[index])
+                NavigationLink(destination: ArticleView(items: self.$presenter.items[index])) {
+                    ArticleCell(items: self.$presenter.items[index])
+                }  
             }
             .navigationBarTitle("新着", displayMode: .automatic)
 
@@ -26,5 +28,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(presenter: HomePresenterImpl())
+            .previewLayout(.sizeThatFits)
     }
 }
