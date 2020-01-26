@@ -18,6 +18,5 @@ struct ArticleView: View {
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
         ArticleView(items: .constant(Fixtures.getItemsResponse()))
-        .previewLayout(.sizeThatFits)
     }
 }

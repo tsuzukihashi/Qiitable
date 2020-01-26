@@ -27,6 +27,7 @@ struct ArticleCell: View {
                 Spacer()
             }
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

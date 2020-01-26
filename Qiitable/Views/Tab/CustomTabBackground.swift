@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct CustomTabBackground: View {
+    @Binding var tabInfo: TabStatus
     @Binding var height: CGFloat
     @Binding var color: Color
     @State var count: Int = 5
@@ -23,7 +24,9 @@ struct CustomTabBackground: View {
                     HStack {
                         Spacer()
                         ForEach(0 ..< self.count) { (row: Int) in
-                            CustomTabItem(image: self.$image[row])
+                            CustomTabItem(tabInfo: self.$tabInfo,
+                                          image: self.$image[row],
+                                          row: row)
                                 .padding(.bottom, 24)
                             Spacer()
                         }
@@ -37,6 +40,7 @@ struct CustomTabBackground: View {
 
 struct CustomTabBackground_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabBackground(height: .constant(88), color: .constant(.gray))
+        CustomTabBackground(tabInfo: .constant(.home),
+                            height: .constant(88), color: .constant(.gray))
     }
 }

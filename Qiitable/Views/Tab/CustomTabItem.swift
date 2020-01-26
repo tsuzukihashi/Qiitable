@@ -1,11 +1,13 @@
 import SwiftUI
 
 struct CustomTabItem: View {
+    @Binding var tabInfo: TabStatus
     @Binding var image:  UIImage?
+    var row: Int
     var size: CGFloat = 28
     var body: some View {
         Button(action: {
-            
+            self.tabInfo = TabStatus.values[self.row]
         }) {
             Image(uiImage: image!)
                 .resizable()
@@ -17,7 +19,9 @@ struct CustomTabItem: View {
 
 struct CustomTabItem_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTabItem(image: .constant(UIImage(systemName: "star")))
+        CustomTabItem(tabInfo: .constant(.home),
+                      image: .constant(UIImage(systemName: "star")),
+                      row: 0)
             .previewLayout(.sizeThatFits)
     }
 }
