@@ -14,7 +14,6 @@ struct HomeView: View {
                 }
             }
             .navigationBarTitle("新着", displayMode: .inline)
-
         }
         .onAppear(perform: presenter.onAppar)
         .alert(isPresented: $presenter.showAlert) { () -> Alert in

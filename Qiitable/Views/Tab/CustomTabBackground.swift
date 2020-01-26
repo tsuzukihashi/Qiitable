@@ -7,10 +7,10 @@ struct CustomTabBackground: View {
     @State var count: Int = 5
     @State var image: [UIImage?] = [
         UIImage(systemName: "paperplane"),
-        UIImage(systemName: "paperclip"),
-        UIImage(systemName: "pencil"),
-        UIImage(systemName: "folder"),
-        UIImage(systemName: "trash")
+        UIImage(systemName: "magnifyingglass"),
+        UIImage(systemName: "shuffle"),
+        UIImage(systemName: "clock"),
+        UIImage(systemName: "person")
     ]
     
     var body: some View {
