@@ -23,6 +23,7 @@ struct ArticleCell: View {
                         .font(.system(size: 10, weight: .light, design: .default))
                         .cornerRadius(5)
                 }
+                .padding(.top, 8)
                 Spacer()
             }
         }
