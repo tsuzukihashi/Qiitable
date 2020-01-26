@@ -1,33 +1,43 @@
 import SwiftUI
+import URLImage
 
 struct ArticleCell: View {
     @Binding var items: ItemsResponse
     var body: some View {
-        VStack {
-            HStack {
-                Text(items.user.id ?? "")
-                Spacer()
-            }
+        HStack {
+            URLImage( URL(string: items.user.profileImageUrl!)!) { proxy in
+                proxy.image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+            }.frame(width: 50, height: 50 )
             
-            HStack {
-                Text(items.title)
-                Spacer()
-            }
-            
-            HStack {
-                ForEach(items.tags, id: \.name) { tag in
-                    Text(tag.name ?? "")
-                        .padding(.horizontal, 5.0)
-                        .padding(.vertical, 3.0)
-                        .background(Color.gray)
-                        .font(.system(size: 10, weight: .light, design: .default))
-                        .cornerRadius(5)
+            VStack {
+                HStack {
+                    Text(items.user.id ?? "")
+                    Spacer()
                 }
-                .padding(.top, 8)
-                Spacer()
+                
+                HStack {
+                    Text(items.title)
+                    Spacer()
+                }
+                
+                HStack {
+                    ForEach(items.tags, id: \.name) { tag in
+                        Text(tag.name ?? "")
+                            .padding(.horizontal, 5.0)
+                            .padding(.vertical, 3.0)
+                            .background(Color.gray)
+                            .font(.system(size: 10, weight: .light, design: .default))
+                            .cornerRadius(5)
+                    }
+                    .padding(.top, 8)
+                    Spacer()
+                }
             }
+            .edgesIgnoringSafeArea(.all)
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

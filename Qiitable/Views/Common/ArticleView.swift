@@ -12,6 +12,7 @@ struct ArticleView: View {
             }
             Text(items.body ?? "")
         }
+    .padding()
     }
 }
 

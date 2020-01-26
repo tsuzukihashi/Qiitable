@@ -39,6 +39,7 @@
 		DAC42C9623DA40C80088F3A4 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C9523DA40C80088F3A4 /* NetworkConstants.swift */; };
 		DAC42C9823DA41160088F3A4 /* ItemsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C9723DA41160088F3A4 /* ItemsRequest.swift */; };
 		DAC6AD6923DDAAD500BD148B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC6AD6823DDAAD500BD148B /* SearchView.swift */; };
+		DAC6AD6C23DDE3E200BD148B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = DAC6AD6B23DDE3E200BD148B /* URLImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC6AD6C23DDE3E200BD148B /* URLImage in Frameworks */,
 				DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +355,7 @@
 			name = Qiitable;
 			packageProductDependencies = (
 				DAC42C8B23DA37620088F3A4 /* Alamofire */,
+				DAC6AD6B23DDE3E200BD148B /* URLImage */,
 			);
 			productName = Qiitable;
 			productReference = DA832B8E23CCB02A00D528D6 /* Qiitable.app */;
@@ -428,6 +431,7 @@
 			mainGroup = DA832B8523CCB02A00D528D6;
 			packageReferences = (
 				DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DAC6AD6A23DDE3E200BD148B /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = DA832B8F23CCB02A00D528D6 /* Products */;
 			projectDirPath = "";
@@ -834,6 +838,14 @@
 				kind = branch;
 			};
 		};
+		DAC6AD6A23DDE3E200BD148B /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -841,6 +853,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		DAC6AD6B23DDE3E200BD148B /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC6AD6A23DDE3E200BD148B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
