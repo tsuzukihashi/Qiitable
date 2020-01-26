@@ -24,6 +24,7 @@ struct CustomTabBackground: View {
                         Spacer()
                         ForEach(0 ..< self.count) { (row: Int) in
                             CustomTabItem(image: self.$image[row])
+                                .padding(.bottom, 24)
                             Spacer()
                         }
                     }
