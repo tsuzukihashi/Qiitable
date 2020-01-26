@@ -6,11 +6,15 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             List(presenter.items.indices, id: \.self) { index in
-                NavigationLink(destination: ArticleView(items: self.$presenter.items[index])) {
+                NavigationLink(
+                destination:
+                    ArticleView(items: self.$presenter.items[index])
+                ) {
                     ArticleCell(items: self.$presenter.items[index])
                 }
             }
-            .navigationBarTitle("新着", displayMode: .automatic)
+            .navigationBarTitle("新着", displayMode: .inline)
+
         }
         .onAppear(perform: presenter.onAppar)
         .alert(isPresented: $presenter.showAlert) { () -> Alert in
