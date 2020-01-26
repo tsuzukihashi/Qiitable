@@ -227,9 +227,9 @@
 			isa = PBXGroup;
 			children = (
 				DAC42C9023DA3E320088F3A4 /* Publisher */,
+				DA21E27223CCB2E5003C3CCD /* Extensions */,
 				DA1AC3BD23DC59A30003FF10 /* Error */,
 				DA1AC3BC23DC598B0003FF10 /* Presenter */,
-				DA21E27223CCB2E5003C3CCD /* Extensions */,
 				DAF4648D23DC88670010A2D4 /* Views */,
 				DA832B9123CCB02A00D528D6 /* AppDelegate.swift */,
 				DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */,
