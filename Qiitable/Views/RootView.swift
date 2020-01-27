@@ -12,8 +12,8 @@ struct RootView: View {
             SearchView()
                 .opacity(tabStatus == .search ? 1 : 0)
 //            // RANDOM
-//            HomeView()
-//                .opacity(tabStatus == .random ? 1 : 0)
+            RandomView()
+                .opacity(tabStatus == .random ? 1 : 0)
 //            // HISTORY
 //            HomeView()
 //                .opacity(tabStatus == .history ? 1 : 0)
