@@ -3,7 +3,7 @@ import SwiftUI
 struct CustomTabView: View {
     @Binding var tabInfo: TabStatus
 
-    @State var height: CGFloat = 88
+    @State var height: CGFloat = 72
     @State var color: Color = .gray
 
     var body: some View {

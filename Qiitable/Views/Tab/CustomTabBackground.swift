@@ -27,13 +27,13 @@ struct CustomTabBackground: View {
                             CustomTabItem(tabInfo: self.$tabInfo,
                                           image: self.$image[row],
                                           row: row)
-                                .padding(.bottom, 24)
+                                .padding(.bottom, 16)
                             Spacer()
                         }
                     }
                 }
             }
-            .edgesIgnoringSafeArea(.bottom)
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }

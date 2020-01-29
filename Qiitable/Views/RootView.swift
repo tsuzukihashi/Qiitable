@@ -8,22 +8,31 @@ struct RootView: View {
             // HOME
             HomeView()
                 .opacity(tabStatus == .home ? 1 : 0)
-//            // SEARCH
+            // SEARCH
             SearchView()
                 .opacity(tabStatus == .search ? 1 : 0)
-//            // RANDOM
+            // RANDOM
             RandomView()
                 .opacity(tabStatus == .random ? 1 : 0)
-//            // HISTORY
-//            HomeView()
-//                .opacity(tabStatus == .history ? 1 : 0)
-//            // MYPAGE
-//            HomeView()
-//                .opacity(tabStatus == .mypage ? 1 : 0)
+            // HISTORY
+            HistoryView()
+                .opacity(tabStatus == .history ? 1 : 0)
+            // MYPAGE
+            MyPageView()
+                .opacity(tabStatus == .mypage ? 1 : 0)
             // TAB
             CustomTabView(tabInfo: self.$tabStatus)
+                .onAppear() {
+                    self.calcHeight()
+            }
         }
         .animation(.spring())
+    }
+    
+    private func calcHeight() {
+        let device = UIDevice.current.model
+        
+        print(device)
     }
 }
 
