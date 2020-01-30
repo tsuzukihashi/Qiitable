@@ -9,7 +9,7 @@ struct LoaderView: View {
             .trim(from: 0, to: 0.8)
             .stroke(
                 AngularGradient(
-                    gradient: .init(colors: [.green, .black]),
+                    gradient: .init(colors: [.yellow, .green]),
                     center: .center),
                 style: StrokeStyle(lineWidth: 8, lineCap: .round))
             .frame(width: 45, height: 45)

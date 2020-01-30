@@ -2,7 +2,14 @@ import SwiftUI
 
 struct MyPageView: View {
     var body: some View {
-        Text("MyPage View")
+        ZStack {
+            Rectangle()
+                .frame(width: 200, height: 80)
+                .background(Color.gray)
+                .cornerRadius(8)
+            Text("ログインする")
+                .foregroundColor(.backgroundMain)
+        }
     }
 }
 
