@@ -4,6 +4,7 @@ struct HomeView: View {
     @EnvironmentObject var presenter: HomePresenterImpl
     
     var body: some View {
+        ZStack {
         NavigationView {
             List(presenter.items.indices, id: \.self) { index in
                 NavigationLink(
@@ -23,6 +24,11 @@ struct HomeView: View {
                                           action: {
                                             self.presenter.getItems()
                   }))
+        }
+            if presenter.showIndicator {
+                CustomIndicator()
+            }
+            
         }
     }
 }

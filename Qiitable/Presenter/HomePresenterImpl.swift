@@ -6,6 +6,7 @@ class HomePresenterImpl: HomePresenter, ObservableObject {
     @Published var items: [ItemsResponse] = []
     @Published var errorCode: String = ""
     @Published var showAlert: Bool = false
+    @Published var showIndicator: Bool = true
     
     var task: AnyCancellable? = nil
     
@@ -17,6 +18,7 @@ class HomePresenterImpl: HomePresenter, ObservableObject {
         self.task = NetworkPublisher.publish(ItemsRequest())
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
+                self.showIndicator = false
                 switch completion {
                 case .finished:
                     print("success")

@@ -29,6 +29,8 @@
 		DA832BB423CCB02E00D528D6 /* QiitableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832BB323CCB02E00D528D6 /* QiitableUITests.swift */; };
 		DA8683FA23E1D12E00FEEBF6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8683F923E1D12E00FEEBF6 /* HistoryView.swift */; };
 		DA8683FD23E1D15300FEEBF6 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8683FC23E1D15300FEEBF6 /* MyPageView.swift */; };
+		DA86840123E3055600FEEBF6 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840023E3055600FEEBF6 /* CustomIndicator.swift */; };
+		DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840223E3066400FEEBF6 /* LoaderView.swift */; };
 		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
 		DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB366CA23DD11DA00487EB6 /* ArticleView.swift */; };
 		DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8A20723DD9B7D0071264F /* TabStatus.swift */; };
@@ -91,6 +93,8 @@
 		DA832BB523CCB02E00D528D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA8683F923E1D12E00FEEBF6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DA8683FC23E1D15300FEEBF6 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		DA86840023E3055600FEEBF6 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
+		DA86840223E3066400FEEBF6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DAB366CA23DD11DA00487EB6 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		DAB8A20723DD9B7D0071264F /* TabStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStatus.swift; sourceTree = "<group>"; };
@@ -306,6 +310,15 @@
 			path = MyPage;
 			sourceTree = "<group>";
 		};
+		DA8683FF23E3052D00FEEBF6 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				DA86840023E3055600FEEBF6 /* CustomIndicator.swift */,
+				DA86840223E3066400FEEBF6 /* LoaderView.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
 		DA9D025B23D36A7C0091CC4E /* Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +378,7 @@
 				DA8683F823E1D12500FEEBF6 /* History */,
 				DA8683FB23E1D14B00FEEBF6 /* MyPage */,
 				DAF4648C23DC883F0010A2D4 /* Common */,
+				DA8683FF23E3052D00FEEBF6 /* Indicator */,
 				DA9D025B23D36A7C0091CC4E /* Tab */,
 			);
 			path = Views;
@@ -522,12 +536,14 @@
 				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
 				DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */,
 				DA5E1B0323DC98570023E53A /* RootView.swift in Sources */,
+				DA86840123E3055600FEEBF6 /* CustomIndicator.swift in Sources */,
 				DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */,
 				DA4A46FD23DC6A6000F9F6BC /* ArticleCell.swift in Sources */,
 				DAC6AD6923DDAAD500BD148B /* SearchView.swift in Sources */,
 				DA1AC3C623DC5C820003FF10 /* HomePresenterImpl.swift in Sources */,
 				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
 				DAC42C8F23DA3CCB0088F3A4 /* BaseAPIProtocol.swift in Sources */,
+				DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */,
 				DAC42C9223DA3E400088F3A4 /* NetworkPublisher.swift in Sources */,
 				DA8683FD23E1D15300FEEBF6 /* MyPageView.swift in Sources */,
 				DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */,
