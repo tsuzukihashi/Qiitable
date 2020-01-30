@@ -4,7 +4,7 @@ struct CustomTabView: View {
     @Binding var tabInfo: TabStatus
 
     @State var height: CGFloat = 72
-    @State var color: Color = .gray
+    @State var color: Color = .tabBar
 
     var body: some View {
         ZStack {

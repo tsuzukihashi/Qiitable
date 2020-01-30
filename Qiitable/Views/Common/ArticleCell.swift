@@ -5,13 +5,18 @@ struct ArticleCell: View {
     @Binding var items: ItemsResponse
     var body: some View {
         HStack {
-            URLImage( URL(string: items.user.profileImageUrl!)!) { proxy in
-                proxy.image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .clipped()
-            }.frame(width: 50, height: 50 )
-            
+            VStack {
+                URLImage( URL(string: items.user.profileImageUrl!)!) { proxy in
+                    proxy.image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .clipped()
+                }
+                .frame(width: 50, height: 50 )
+                .cornerRadius(4)
+                .padding(.top, 8)
+                Spacer()
+            }
             VStack {
                 HStack {
                     Text(items.user.id ?? "")
