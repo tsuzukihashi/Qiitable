@@ -32,6 +32,10 @@
 		DA86840123E3055600FEEBF6 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840023E3055600FEEBF6 /* CustomIndicator.swift */; };
 		DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840223E3066400FEEBF6 /* LoaderView.swift */; };
 		DA86840623E4C70F00FEEBF6 /* RandomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840523E4C70F00FEEBF6 /* RandomRequest.swift */; };
+		DA86840923E5651900FEEBF6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */; };
+		DA86840C23E565B000FEEBF6 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = DA86840B23E565B000FEEBF6 /* SwURL */; };
+		DA86840E23E5A90300FEEBF6 /* RandomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */; };
+		DA86841023E5AACE00FEEBF6 /* RandomPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */; };
 		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
 		DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB366CA23DD11DA00487EB6 /* ArticleView.swift */; };
 		DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8A20723DD9B7D0071264F /* TabStatus.swift */; };
@@ -97,6 +101,8 @@
 		DA86840023E3055600FEEBF6 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		DA86840223E3066400FEEBF6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		DA86840523E4C70F00FEEBF6 /* RandomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRequest.swift; sourceTree = "<group>"; };
+		DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPresenter.swift; sourceTree = "<group>"; };
+		DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPresenterImpl.swift; sourceTree = "<group>"; };
 		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DAB366CA23DD11DA00487EB6 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		DAB8A20723DD9B7D0071264F /* TabStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStatus.swift; sourceTree = "<group>"; };
@@ -116,7 +122,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA86840923E5651900FEEBF6 /* SDWebImageSwiftUI in Frameworks */,
 				DAC6AD6C23DDE3E200BD148B /* URLImage in Frameworks */,
+				DA86840C23E565B000FEEBF6 /* SwURL in Frameworks */,
 				DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1AC3C523DC5C820003FF10 /* HomePresenterImpl.swift */,
+				DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -183,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1AC3C323DC5C340003FF10 /* HomePresenter.swift */,
+				DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -406,6 +416,8 @@
 			packageProductDependencies = (
 				DAC42C8B23DA37620088F3A4 /* Alamofire */,
 				DAC6AD6B23DDE3E200BD148B /* URLImage */,
+				DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */,
+				DA86840B23E565B000FEEBF6 /* SwURL */,
 			);
 			productName = Qiitable;
 			productReference = DA832B8E23CCB02A00D528D6 /* Qiitable.app */;
@@ -482,6 +494,8 @@
 			packageReferences = (
 				DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DAC6AD6A23DDE3E200BD148B /* XCRemoteSwiftPackageReference "url-image" */,
+				DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */,
 			);
 			productRefGroup = DA832B8F23CCB02A00D528D6 /* Products */;
 			projectDirPath = "";
@@ -533,10 +547,12 @@
 				DA8683FA23E1D12E00FEEBF6 /* HistoryView.swift in Sources */,
 				DAC42C9823DA41160088F3A4 /* ItemsRequest.swift in Sources */,
 				DAC42C9623DA40C80088F3A4 /* NetworkConstants.swift in Sources */,
+				DA86840E23E5A90300FEEBF6 /* RandomPresenter.swift in Sources */,
 				DA86840623E4C70F00FEEBF6 /* RandomRequest.swift in Sources */,
 				DA0F901823DF309A0092E25B /* RandomView.swift in Sources */,
 				DAC42C9423DA3FC40088F3A4 /* BaseRequestProtocol.swift in Sources */,
 				DA1AC3C423DC5C340003FF10 /* HomePresenter.swift in Sources */,
+				DA86841023E5AACE00FEEBF6 /* RandomPresenterImpl.swift in Sources */,
 				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
 				DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */,
 				DA5E1B0323DC98570023E53A /* RootView.swift in Sources */,
@@ -886,6 +902,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.2;
+			};
+		};
+		DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cmtrounce/SwURL.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
 		DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -905,6 +937,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		DA86840B23E565B000FEEBF6 /* SwURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */;
+			productName = SwURL;
+		};
 		DAC42C8B23DA37620088F3A4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */;

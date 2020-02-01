@@ -1,16 +1,16 @@
 import SwiftUI
 
 struct ArticleView: View {
-    @Binding var items: ItemsResponse
+    @Binding var item: ItemsResponse
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             HStack {
-                Text(items.title)
+                Text(item.title)
                     .font(.system(.title))
                 Spacer()
             }
-            Text(items.body ?? "")
+            Text(item.body ?? "")
         }
     .padding()
     }
@@ -18,6 +18,6 @@ struct ArticleView: View {
 
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(items: .constant(Fixtures.getItemsResponse()))
+        ArticleView(item: .constant(Fixtures.getItemsResponse()))
     }
 }

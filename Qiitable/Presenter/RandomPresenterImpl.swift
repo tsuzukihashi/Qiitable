@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-class HomePresenterImpl: HomePresenter, ObservableObject {
+class RandomPresenterImpl: RandomPresenter, ObservableObject {
     
     @Published var items: [ItemsResponse] = []
     @Published var errorCode: String = ""
@@ -11,13 +11,15 @@ class HomePresenterImpl: HomePresenter, ObservableObject {
     var task: AnyCancellable? = nil
     
     func onAppar() {
-        getItems()
+        getItem()
     }
     
-    func getItems() {
-        task = NetworkPublisher.publish(ItemsRequest())
+    func getItem() {
+        let page = Int.random(in: 1...100)
+        let num = Int.random(in: 0...99)
+        self.task = NetworkPublisher.publish(RandomRequest(page: page))
             .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { [weak self] completion in
+            .sink(receiveCompletion: {[weak self] completion in
                 switch completion {
                 case .finished:
                     print("success")
@@ -28,11 +30,17 @@ class HomePresenterImpl: HomePresenter, ObservableObject {
                     self?.showAlert = true
                 }
             }, receiveValue: { [weak self] data in
-                self?.items = data
+                self?.items.append(data[num])
                 self?.errorCode = ""
                 self?.showAlert = false
             })
     }
     
-    
+    func restart() {
+        showIndicator = true
+        items.removeAll()
+        errorCode = ""
+        showAlert = false
+        getItem()
+    }
 }

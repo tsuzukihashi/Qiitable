@@ -1,11 +1,38 @@
 import SwiftUI
 
 struct RandomView: View {
+    @EnvironmentObject var randomPresenter: RandomPresenterImpl
+    
     var body: some View {
-        Text("Random View")
-            .onAppear() {
-                let page = Int.random(in: 1...100)
-                let num = Int.random(in: 0...99)
+        VStack {
+            if randomPresenter.showIndicator == true {
+                CustomIndicator()
+                    .onAppear() {
+                        self.randomPresenter.onAppar()
+                }
+            } else {
+                ZStack {
+                    ArticleView(item: self.$randomPresenter.items[0])
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                self.randomPresenter.restart()
+                            }) {
+                                ZStack {
+                                    Circle()
+                                        .foregroundColor(.blue)
+                                        .frame(width: 32, height: 32)
+                                Text("+")
+                                    .foregroundColor(Color.white)
+                                    .padding()
+                                }
+                            }.padding()
+                        }.padding(.bottom, 44)
+                    }
+                }
+            }
         }
     }
 }
