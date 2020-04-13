@@ -39,6 +39,8 @@
 		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
 		DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB366CA23DD11DA00487EB6 /* ArticleView.swift */; };
 		DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8A20723DD9B7D0071264F /* TabStatus.swift */; };
+		DABFC3682444B986004BB6A4 /* RandomAccessCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */; };
+		DABFC36A2444BAD0004BB6A4 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */; };
 		DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */; };
 		DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */; };
 		DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */; };
@@ -106,6 +108,8 @@
 		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DAB366CA23DD11DA00487EB6 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		DAB8A20723DD9B7D0071264F /* TabStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStatus.swift; sourceTree = "<group>"; };
+		DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExtension.swift; sourceTree = "<group>"; };
+		DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBackground.swift; sourceTree = "<group>"; };
 		DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1AC3C523DC5C820003FF10 /* HomePresenterImpl.swift */,
+				DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */,
 				DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */,
 			);
 			path = Presenter;
@@ -217,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */,
+				DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */,
+				DABFC3682444B986004BB6A4 /* RandomAccessCollectionExtension.swift in Sources */,
 				DA8683FA23E1D12E00FEEBF6 /* HistoryView.swift in Sources */,
 				DAC42C9823DA41160088F3A4 /* ItemsRequest.swift in Sources */,
 				DAC42C9623DA40C80088F3A4 /* NetworkConstants.swift in Sources */,
@@ -564,6 +571,7 @@
 				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
 				DAC42C8F23DA3CCB0088F3A4 /* BaseAPIProtocol.swift in Sources */,
 				DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */,
+				DABFC36A2444BAD0004BB6A4 /* ListViewModel.swift in Sources */,
 				DAC42C9223DA3E400088F3A4 /* NetworkPublisher.swift in Sources */,
 				DA8683FD23E1D15300FEEBF6 /* MyPageView.swift in Sources */,
 				DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */,

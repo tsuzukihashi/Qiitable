@@ -3,10 +3,13 @@ import SwiftUI
 struct RootView: View {
     @State var tabStatus: TabStatus = .home
     
+    private func tete() -> ListViewModel {
+        return ListViewModel()
+    }
     var body: some View {
         ZStack {
             // HOME
-            HomeView()
+            HomeView(viewModel: tete())
                 .opacity(tabStatus == .home ? 1 : 0)
             // SEARCH
             SearchView()

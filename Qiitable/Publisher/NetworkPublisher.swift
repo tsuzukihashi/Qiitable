@@ -30,7 +30,7 @@ struct NetworkPublisher {
                                 let json = try self.decorder.decode(V.self, from: data)
                                 promise(.success(json))
                             } else {
-                                promise(.failure(APIError.response))
+                                promise(.failure(APIError.response(response.error as! Error)))
                             }
                         } catch {
                             promise(.failure(APIError.mapping))
