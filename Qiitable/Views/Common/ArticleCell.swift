@@ -2,7 +2,7 @@ import SwiftUI
 import URLImage
 
 struct ArticleCell: View {
-    @Binding var items: ItemsResponse
+    let items: ItemsResponse
     var body: some View {
         HStack {
             VStack {
@@ -48,7 +48,7 @@ struct ArticleCell: View {
 
 struct ArticleCell_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleCell(items: .constant(Fixtures.getItemsResponse()))
+        ArticleCell(items: Fixtures.getItemsResponse())
             .previewLayout(.sizeThatFits)
     }
 }

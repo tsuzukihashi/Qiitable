@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ArticleView: View {
-    @Binding var item: ItemsResponse
+    let item: ItemsResponse
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -18,6 +18,6 @@ struct ArticleView: View {
 
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleView(item: .constant(Fixtures.getItemsResponse()))
+        ArticleView(item: Fixtures.getItemsResponse())
     }
 }
