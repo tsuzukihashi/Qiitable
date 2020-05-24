@@ -4,20 +4,25 @@ struct HomeView: View {
     @ObservedObject var viewModel: ListViewModel
     
     var body: some View {
-        NavigationView {
-            List(viewModel.items) { item in
-                NavigationLink(
-                    destination:
-                    ArticleView(item: item)
-                ) {
-                    ArticleCell(items: item)
-                }
-                .onAppear {
-                    self.viewModel.loadNext(item: item)
-                }
-            }.onAppear {
-                self.viewModel.onAppear()
-            }.navigationBarTitle("検索結果")
+        ZStack {
+            NavigationView {
+                List(viewModel.items) { item in
+                    NavigationLink(
+                        destination:
+                        ArticleView(item: item)
+                    ) {
+                        ArticleCell(items: item)
+                    }
+                    .onAppear {
+                        self.viewModel.loadNext(item: item)
+                    }
+                }.onAppear {
+                    self.viewModel.onAppear()
+                }.navigationBarTitle("検索結果")
+            }
+            if viewModel.isLoading {
+                CustomIndicator()
+            }
         }
     }
 }

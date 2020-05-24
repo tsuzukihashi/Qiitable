@@ -6,13 +6,12 @@ final class ListViewModel: ObservableObject {
     @Published var items: [ItemsResponse] = []
     @Published var isLoading = false
 
-    private var cancellables: Set<AnyCancellable> = []
-
     private let perPage = 20
     private var currentPage = 1
 
     func loadNext(item: ItemsResponse) {
         if items.isLastItem(item) {
+            isLoading = true
             self.currentPage += 1
             getQiitaList(page: currentPage, perPage: perPage) { [weak self] result in
                 self?.handleResult(result)
@@ -21,6 +20,7 @@ final class ListViewModel: ObservableObject {
     }
 
     func onAppear() {
+        isLoading = true
         getQiitaList(page: currentPage, perPage: perPage) { [weak self] result in
              self?.handleResult(result)
         }
