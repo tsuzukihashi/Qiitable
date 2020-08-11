@@ -1,6 +1,11 @@
 import Foundation
 import Combine
 
+protocol RandomPresenter {
+    func onAppar()
+    func getItem()
+}
+
 class RandomPresenterImpl: RandomPresenter, ObservableObject {
     
     @Published var items: [ItemsResponse] = []

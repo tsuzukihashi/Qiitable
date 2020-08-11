@@ -1,41 +1,63 @@
 import SwiftUI
 
+enum TabState: Hashable {
+    case home
+    case search
+    case random
+    case history
+    case mypage
+}
+
 struct RootView: View {
-    @State var tabStatus: TabStatus = .home
+    @State private var tabState: TabState = .home
     
-    private func tete() -> ListViewModel {
-        return ListViewModel()
-    }
     var body: some View {
-        ZStack {
-            // HOME
-            HomeView(viewModel: tete())
-                .opacity(tabStatus == .home ? 1 : 0)
-            // SEARCH
+        TabView(selection: $tabState) {
+            HomeView(viewModel: ListViewModel())
+                .tabItem {
+                    VStack {
+                        Image(systemName: "house")
+                            .imageScale(.large)
+                        Text("home")
+                    }
+            }.tag(TabState.home)
+            
             SearchView()
-                .opacity(tabStatus == .search ? 1 : 0)
-            // RANDOM
+                .tabItem {
+                    VStack {
+                        Image(systemName: "magnifyingglass")
+                            .imageScale(.large)
+                        Text("search")
+                    }
+            }.tag(TabState.search)
+            
             RandomView()
-                .opacity(tabStatus == .random ? 1 : 0)
-            // HISTORY
+                .tabItem {
+                    VStack {
+                        Image(systemName: "pencil.and.outline")
+                            .imageScale(.large)
+                        Text("random")
+                    }
+            }.tag(TabState.random)
+            
             HistoryView()
-                .opacity(tabStatus == .history ? 1 : 0)
-            // MYPAGE
+                .tabItem {
+                    VStack {
+                        Image(systemName: "clock")
+                            .imageScale(.large)
+                        Text("history")
+                    }
+            }.tag(TabState.history)
+            
             MyPageView()
-                .opacity(tabStatus == .mypage ? 1 : 0)
-            // TAB
-            CustomTabView(tabInfo: self.$tabStatus)
-                .onAppear() {
-                    self.calcHeight()
-            }
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.fill")
+                            .imageScale(.large)
+                        Text("mypage")
+                    }
+            }.tag(TabState.mypage)
         }
-        .animation(.spring())
-    }
-    
-    private func calcHeight() {
-        let device = UIDevice.current.model
-        
-        print(device)
     }
 }
 

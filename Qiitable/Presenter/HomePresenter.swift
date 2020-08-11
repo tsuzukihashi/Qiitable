@@ -1,6 +1,11 @@
 import Foundation
 import Combine
 
+protocol HomePresenter {
+    func onAppar()
+    func getItems()
+}
+
 class HomePresenterImpl: HomePresenter, ObservableObject {
     
     @Published var items: [ItemsResponse] = []

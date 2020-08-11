@@ -1,8 +1,10 @@
 import SwiftUI
 import URLImage
+import StubKit
 
 struct ArticleCell: View {
     let items: ItemsResponse
+
     var body: some View {
         HStack {
             VStack {
@@ -31,11 +33,13 @@ struct ArticleCell: View {
                 HStack {
                     ForEach(items.tags, id: \.name) { tag in
                         Text(tag.name ?? "")
+                            .lineLimit(1)
                             .padding(.horizontal, 5.0)
                             .padding(.vertical, 3.0)
                             .background(Color.gray)
                             .font(.system(size: 10, weight: .light, design: .default))
                             .cornerRadius(5)
+                            .layoutPriority(1)
                     }
                     .padding(.top, 8)
                     Spacer()
@@ -48,7 +52,17 @@ struct ArticleCell: View {
 
 struct ArticleCell_Previews: PreviewProvider {
     static var previews: some View {
-        ArticleCell(items: Fixtures.getItemsResponse())
+        let user = try! Stub.make(ItemsResponse.User.self) {
+            $0.set(\.profileImageUrl, value: "https://www.amazon.co.jp/favicon.ico")
+        }
+        let tags = [try! Stub.make(ItemsResponse.Tag.self) {
+            $0.set(\.name, value: "pokemon")
+        }]
+        let stub = try! Stub.make(ItemsResponse.self) {
+            $0.set(\.user, value: user)
+            $0.set(\.tags, value: tags)
+        }
+        return ArticleCell(items: stub)
             .previewLayout(.sizeThatFits)
     }
 }

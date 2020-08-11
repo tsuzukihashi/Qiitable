@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA294F4624E2EE1D00399DF8 /* StubKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA294F4524E2EE1D00399DF8 /* StubKit */; };
 		DA0F901823DF309A0092E25B /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F901723DF309A0092E25B /* RandomView.swift */; };
 		DA1AC3BF23DC59AD0003FF10 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3BE23DC59AD0003FF10 /* APIError.swift */; };
-		DA1AC3C423DC5C340003FF10 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3C323DC5C340003FF10 /* HomePresenter.swift */; };
-		DA1AC3C623DC5C820003FF10 /* HomePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3C523DC5C820003FF10 /* HomePresenterImpl.swift */; };
+		DA1AC3C623DC5C820003FF10 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3C523DC5C820003FF10 /* HomePresenter.swift */; };
 		DA1AC3CA23DC663D0003FF10 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3C923DC663D0003FF10 /* HomePresenterTests.swift */; };
 		DA1AC3CE23DC68080003FF10 /* HomePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3CD23DC68080003FF10 /* HomePresenterMock.swift */; };
 		DA21E26F23CCB202003C3CCD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA21E26E23CCB202003C3CCD /* .gitignore */; };
@@ -18,7 +18,6 @@
 		DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */; };
 		DA21E27623CCB322003C3CCD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA21E27523CCB322003C3CCD /* Colors.xcassets */; };
 		DA4A46FD23DC6A6000F9F6BC /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A46FC23DC6A6000F9F6BC /* ArticleCell.swift */; };
-		DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A46FF23DC6C7100F9F6BC /* Fixtures.swift */; };
 		DA4A470323DC7CD400F9F6BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A470223DC7CD400F9F6BC /* HomeView.swift */; };
 		DA5E1B0323DC98570023E53A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5E1B0223DC98570023E53A /* RootView.swift */; };
 		DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA832B9123CCB02A00D528D6 /* AppDelegate.swift */; };
@@ -32,17 +31,10 @@
 		DA86840123E3055600FEEBF6 /* CustomIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840023E3055600FEEBF6 /* CustomIndicator.swift */; };
 		DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840223E3066400FEEBF6 /* LoaderView.swift */; };
 		DA86840623E4C70F00FEEBF6 /* RandomRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840523E4C70F00FEEBF6 /* RandomRequest.swift */; };
-		DA86840923E5651900FEEBF6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */; };
-		DA86840C23E565B000FEEBF6 /* SwURL in Frameworks */ = {isa = PBXBuildFile; productRef = DA86840B23E565B000FEEBF6 /* SwURL */; };
-		DA86840E23E5A90300FEEBF6 /* RandomPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */; };
 		DA86841023E5AACE00FEEBF6 /* RandomPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */; };
-		DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D025923D36A590091CC4E /* CustomTabView.swift */; };
 		DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB366CA23DD11DA00487EB6 /* ArticleView.swift */; };
-		DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8A20723DD9B7D0071264F /* TabStatus.swift */; };
 		DABFC3682444B986004BB6A4 /* RandomAccessCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */; };
 		DABFC36A2444BAD0004BB6A4 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */; };
-		DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */; };
-		DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */; };
 		DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */; };
 		DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DAC42C8B23DA37620088F3A4 /* Alamofire */; };
 		DAC42C8F23DA3CCB0088F3A4 /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42C8E23DA3CCB0088F3A4 /* BaseAPIProtocol.swift */; };
@@ -74,8 +66,7 @@
 /* Begin PBXFileReference section */
 		DA0F901723DF309A0092E25B /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		DA1AC3BE23DC59AD0003FF10 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		DA1AC3C323DC5C340003FF10 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		DA1AC3C523DC5C820003FF10 /* HomePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterImpl.swift; sourceTree = "<group>"; };
+		DA1AC3C523DC5C820003FF10 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DA1AC3C923DC663D0003FF10 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		DA1AC3CD23DC68080003FF10 /* HomePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterMock.swift; sourceTree = "<group>"; };
 		DA21E26E23CCB202003C3CCD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -83,7 +74,6 @@
 		DA21E27323CCB2F0003C3CCD /* ColorExtensioin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensioin.swift; sourceTree = "<group>"; };
 		DA21E27523CCB322003C3CCD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DA4A46FC23DC6A6000F9F6BC /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
-		DA4A46FF23DC6C7100F9F6BC /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		DA4A470223DC7CD400F9F6BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DA5E1B0223DC98570023E53A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DA832B8E23CCB02A00D528D6 /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,15 +93,10 @@
 		DA86840023E3055600FEEBF6 /* CustomIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicator.swift; sourceTree = "<group>"; };
 		DA86840223E3066400FEEBF6 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		DA86840523E4C70F00FEEBF6 /* RandomRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRequest.swift; sourceTree = "<group>"; };
-		DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPresenter.swift; sourceTree = "<group>"; };
 		DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPresenterImpl.swift; sourceTree = "<group>"; };
-		DA9D025923D36A590091CC4E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		DAB366CA23DD11DA00487EB6 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
-		DAB8A20723DD9B7D0071264F /* TabStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStatus.swift; sourceTree = "<group>"; };
 		DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExtension.swift; sourceTree = "<group>"; };
 		DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBackground.swift; sourceTree = "<group>"; };
-		DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		DAC42C8823D751F30088F3A4 /* ItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResponse.swift; sourceTree = "<group>"; };
 		DAC42C8E23DA3CCB0088F3A4 /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
 		DAC42C9123DA3E400088F3A4 /* NetworkPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPublisher.swift; sourceTree = "<group>"; };
@@ -126,9 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA86840923E5651900FEEBF6 /* SDWebImageSwiftUI in Frameworks */,
+				AA294F4624E2EE1D00399DF8 /* StubKit in Frameworks */,
 				DAC6AD6C23DDE3E200BD148B /* URLImage in Frameworks */,
-				DA86840C23E565B000FEEBF6 /* SwURL in Frameworks */,
 				DAC42C8C23DA37620088F3A4 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,7 +145,7 @@
 		DA1AC3BC23DC598B0003FF10 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				DA1AC3C523DC5C820003FF10 /* HomePresenterImpl.swift */,
+				DA1AC3C523DC5C820003FF10 /* HomePresenter.swift */,
 				DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */,
 				DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */,
 			);
@@ -193,15 +177,6 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		DA1AC3C223DC5B170003FF10 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				DA1AC3C323DC5C340003FF10 /* HomePresenter.swift */,
-				DA86840D23E5A90300FEEBF6 /* RandomPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		DA1AC3CB23DC664A0003FF10 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,14 +200,6 @@
 				DABFC3672444B986004BB6A4 /* RandomAccessCollectionExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		DA4A46FE23DC6C5700F9F6BC /* Fixtures */ = {
-			isa = PBXGroup;
-			children = (
-				DA4A46FF23DC6C7100F9F6BC /* Fixtures.swift */,
-			);
-			path = Fixtures;
 			sourceTree = "<group>";
 		};
 		DA4A470123DC7C9200F9F6BC /* Home */ = {
@@ -270,12 +237,9 @@
 			isa = PBXGroup;
 			children = (
 				DAC42C9023DA3E320088F3A4 /* Publisher */,
-				DA21E27223CCB2E5003C3CCD /* Extensions */,
-				DA1AC3BD23DC59A30003FF10 /* Error */,
 				DA1AC3BC23DC598B0003FF10 /* Presenter */,
 				DAF4648D23DC88670010A2D4 /* Views */,
 				DA832B9123CCB02A00D528D6 /* AppDelegate.swift */,
-				DAB8A20723DD9B7D0071264F /* TabStatus.swift */,
 				DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */,
 				DA832B9723CCB02E00D528D6 /* Assets.xcassets */,
 				DA21E27523CCB322003C3CCD /* Colors.xcassets */,
@@ -338,23 +302,13 @@
 			path = Indicator;
 			sourceTree = "<group>";
 		};
-		DA9D025B23D36A7C0091CC4E /* Tab */ = {
-			isa = PBXGroup;
-			children = (
-				DA9D025923D36A590091CC4E /* CustomTabView.swift */,
-				DAC42C8423D36FCF0088F3A4 /* CustomTabBackground.swift */,
-				DAC42C8623D3744E0088F3A4 /* CustomTabItem.swift */,
-			);
-			path = Tab;
-			sourceTree = "<group>";
-		};
 		DAC42C8D23DA3C830088F3A4 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				DA4A46FE23DC6C5700F9F6BC /* Fixtures */,
-				DA1AC3C223DC5B170003FF10 /* Presenter */,
 				DA1AC3C123DC59E00003FF10 /* Request */,
 				DA1AC3C023DC59D00003FF10 /* Response */,
+				DA1AC3BD23DC59A30003FF10 /* Error */,
+				DA21E27223CCB2E5003C3CCD /* Extensions */,
 				DAC42C8E23DA3CCB0088F3A4 /* BaseAPIProtocol.swift */,
 				DAC42C9523DA40C80088F3A4 /* NetworkConstants.swift */,
 				DAC42C9323DA3FC40088F3A4 /* BaseRequestProtocol.swift */,
@@ -381,6 +335,7 @@
 		DAF4648C23DC883F0010A2D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DA8683FF23E3052D00FEEBF6 /* Indicator */,
 				DA4A46FC23DC6A6000F9F6BC /* ArticleCell.swift */,
 				DAB366CA23DD11DA00487EB6 /* ArticleView.swift */,
 			);
@@ -397,8 +352,6 @@
 				DA8683F823E1D12500FEEBF6 /* History */,
 				DA8683FB23E1D14B00FEEBF6 /* MyPage */,
 				DAF4648C23DC883F0010A2D4 /* Common */,
-				DA8683FF23E3052D00FEEBF6 /* Indicator */,
-				DA9D025B23D36A7C0091CC4E /* Tab */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,8 +375,7 @@
 			packageProductDependencies = (
 				DAC42C8B23DA37620088F3A4 /* Alamofire */,
 				DAC6AD6B23DDE3E200BD148B /* URLImage */,
-				DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */,
-				DA86840B23E565B000FEEBF6 /* SwURL */,
+				AA294F4524E2EE1D00399DF8 /* StubKit */,
 			);
 			productName = Qiitable;
 			productReference = DA832B8E23CCB02A00D528D6 /* Qiitable.app */;
@@ -500,8 +452,7 @@
 			packageReferences = (
 				DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DAC6AD6A23DDE3E200BD148B /* XCRemoteSwiftPackageReference "url-image" */,
-				DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
-				DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */,
+				AA294F4424E2EE1D00399DF8 /* XCRemoteSwiftPackageReference "StubKit" */,
 			);
 			productRefGroup = DA832B8F23CCB02A00D528D6 /* Products */;
 			projectDirPath = "";
@@ -549,35 +500,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB8A20823DD9B7D0071264F /* TabStatus.swift in Sources */,
 				DABFC3682444B986004BB6A4 /* RandomAccessCollectionExtension.swift in Sources */,
 				DA8683FA23E1D12E00FEEBF6 /* HistoryView.swift in Sources */,
 				DAC42C9823DA41160088F3A4 /* ItemsRequest.swift in Sources */,
 				DAC42C9623DA40C80088F3A4 /* NetworkConstants.swift in Sources */,
-				DA86840E23E5A90300FEEBF6 /* RandomPresenter.swift in Sources */,
 				DA86840623E4C70F00FEEBF6 /* RandomRequest.swift in Sources */,
 				DA0F901823DF309A0092E25B /* RandomView.swift in Sources */,
 				DAC42C9423DA3FC40088F3A4 /* BaseRequestProtocol.swift in Sources */,
-				DA1AC3C423DC5C340003FF10 /* HomePresenter.swift in Sources */,
 				DA86841023E5AACE00FEEBF6 /* RandomPresenterImpl.swift in Sources */,
 				DA832B9223CCB02A00D528D6 /* AppDelegate.swift in Sources */,
-				DA4A470023DC6C7100F9F6BC /* Fixtures.swift in Sources */,
 				DA5E1B0323DC98570023E53A /* RootView.swift in Sources */,
 				DA86840123E3055600FEEBF6 /* CustomIndicator.swift in Sources */,
 				DAB366CB23DD11DA00487EB6 /* ArticleView.swift in Sources */,
 				DA4A46FD23DC6A6000F9F6BC /* ArticleCell.swift in Sources */,
 				DAC6AD6923DDAAD500BD148B /* SearchView.swift in Sources */,
-				DA1AC3C623DC5C820003FF10 /* HomePresenterImpl.swift in Sources */,
+				DA1AC3C623DC5C820003FF10 /* HomePresenter.swift in Sources */,
 				DA21E27423CCB2F0003C3CCD /* ColorExtensioin.swift in Sources */,
 				DAC42C8F23DA3CCB0088F3A4 /* BaseAPIProtocol.swift in Sources */,
 				DA86840323E3066400FEEBF6 /* LoaderView.swift in Sources */,
 				DABFC36A2444BAD0004BB6A4 /* ListViewModel.swift in Sources */,
 				DAC42C9223DA3E400088F3A4 /* NetworkPublisher.swift in Sources */,
 				DA8683FD23E1D15300FEEBF6 /* MyPageView.swift in Sources */,
-				DAC42C8723D3744E0088F3A4 /* CustomTabItem.swift in Sources */,
-				DA9D025A23D36A590091CC4E /* CustomTabView.swift in Sources */,
 				DA832B9423CCB02A00D528D6 /* SceneDelegate.swift in Sources */,
-				DAC42C8523D36FCF0088F3A4 /* CustomTabBackground.swift in Sources */,
 				DAC42C8923D751F30088F3A4 /* ItemsResponse.swift in Sources */,
 				DA1AC3BF23DC59AD0003FF10 /* APIError.swift in Sources */,
 				DA4A470323DC7CD400F9F6BC /* HomeView.swift in Sources */,
@@ -910,20 +854,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		AA294F4424E2EE1D00399DF8 /* XCRemoteSwiftPackageReference "StubKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			repositoryURL = "https://github.com/kateinoigakukun/StubKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.10.2;
-			};
-		};
-		DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/cmtrounce/SwURL.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
+				minimumVersion = 0.1.6;
 			};
 		};
 		DAC42C8A23DA37620088F3A4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -945,15 +881,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA86840823E5651900FEEBF6 /* SDWebImageSwiftUI */ = {
+		AA294F4524E2EE1D00399DF8 /* StubKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DA86840723E5651900FEEBF6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
-			productName = SDWebImageSwiftUI;
-		};
-		DA86840B23E565B000FEEBF6 /* SwURL */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA86840A23E565B000FEEBF6 /* XCRemoteSwiftPackageReference "SwURL" */;
-			productName = SwURL;
+			package = AA294F4424E2EE1D00399DF8 /* XCRemoteSwiftPackageReference "StubKit" */;
+			productName = StubKit;
 		};
 		DAC42C8B23DA37620088F3A4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

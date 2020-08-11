@@ -11,30 +11,12 @@
         }
       },
       {
-        "package": "SDWebImage",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "package": "StubKit",
+        "repositoryURL": "https://github.com/kateinoigakukun/StubKit.git",
         "state": {
           "branch": null,
-          "revision": "aa7ff6f060d8f34d2c66a716aefff1a3bc9ef816",
-          "version": "5.5.2"
-        }
-      },
-      {
-        "package": "SDWebImageSwiftUI",
-        "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
-        "state": {
-          "branch": null,
-          "revision": "7e92d42ee51c8263a862dce2a7f64f391f98096a",
-          "version": "0.10.2"
-        }
-      },
-      {
-        "package": "SwURL",
-        "repositoryURL": "https://github.com/cmtrounce/SwURL.git",
-        "state": {
-          "branch": null,
-          "revision": "967e7e7c441374c76d5559e27db2a74a26160fe5",
-          "version": "0.2.2"
+          "revision": "bcfc29e17114c5e07f71fc24d8ea111eca74ee87",
+          "version": "0.1.6"
         }
       },
       {
