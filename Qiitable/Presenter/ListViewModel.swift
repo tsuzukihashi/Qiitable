@@ -22,13 +22,14 @@ final class ListViewModel: ObservableObject {
     func onAppear() {
         isLoading = true
         getQiitaList(page: currentPage, perPage: perPage) { [weak self] result in
-             self?.handleResult(result)
+            self?.handleResult(result)
         }
     }
 
-    private func getQiitaList(page: Int, perPage: Int,
-                              completion: @escaping (Result<[ItemsResponse], Error>) -> Void) {
-
+    private func getQiitaList(
+        page: Int, perPage: Int,
+        completion: @escaping (Result<[ItemsResponse], Error>) -> Void
+    ) {
         let parameters: [String: Any] = [
             "page": currentPage,
             "per_page": perPage,
