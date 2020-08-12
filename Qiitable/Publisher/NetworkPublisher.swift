@@ -13,7 +13,7 @@ struct NetworkPublisher {
         return jsonDecoder
     }()
     
-    static func publish<T, V>(_ request: T) -> Future<V, AFError>
+    static func publish<T, V>(_ request: T) -> Future<V, APIError>
         where T: BaseRequestProtocol, V: Codable, T.ResponseType == V {
             return Future { promise in
                 let api = AF.request(request)
@@ -30,7 +30,7 @@ struct NetworkPublisher {
                                 let json = try self.decorder.decode(V.self, from: data)
                                 promise(.success(json))
                             } else {
-                                promise(.failure(APIError.response(response.error))
+                                promise(.failure(APIError.response(response.error as! Error)))
                             }
                         } catch {
                             promise(.failure(APIError.mapping))
