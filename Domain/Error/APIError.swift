@@ -27,7 +27,7 @@ extension APIError: LocalizedError {
         case .response(let error):
             return "\(error.localizedDescription)"
         case .invalidResponse(let response):
-            return "\(response)"
+            return "\(response.debugDescription)"
         case .unknown:
             return "unkonwn"
         }

@@ -20,9 +20,6 @@ struct HomeView: View {
                     self.viewModel.onAppear()
                 }.navigationBarTitle("検索結果")
             }
-            if viewModel.isLoading {
-                CustomIndicator()
-            }
         }
     }
 }

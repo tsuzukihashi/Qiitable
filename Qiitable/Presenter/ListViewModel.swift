@@ -4,12 +4,12 @@ import Foundation
 final class ListViewModel: ObservableObject {
 
     @Published var items: [ItemsResponse] = []
-    @Published var isLoading = false
-
+    private var isLoading = false
     private let perPage = 20
     private var currentPage = 1
 
     func loadNext(item: ItemsResponse) {
+        guard !isLoading else { return }
         if items.isLastItem(item) {
             isLoading = true
             self.currentPage += 1

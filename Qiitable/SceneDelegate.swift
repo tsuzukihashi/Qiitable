@@ -6,13 +6,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        let homePresenter = HomePresenterImpl()
-        let randomPresenter = RandomPresenterImpl()
-        
         let contentView = RootView()
-            .environmentObject(homePresenter)
-            .environmentObject(randomPresenter)
-
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)

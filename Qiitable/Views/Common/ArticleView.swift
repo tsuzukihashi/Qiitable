@@ -5,14 +5,7 @@ struct ArticleView: View {
     let item: ItemsResponse
 
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            HStack {
-                Text(item.title)
-                    .font(.system(.title))
-            }
-            Text(item.body ?? "")
-        }
-        .padding()
+        WebView(htmlBody: item.renderedBody!)
     }
 }
 
