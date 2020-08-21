@@ -33,12 +33,14 @@ struct ArticleCell: View {
                 HStack {
                     ForEach(items.tags, id: \.name) { tag in
                         Text(tag.name ?? "")
+                            .bold()
                             .lineLimit(1)
+                            .foregroundColor(.white)
                             .padding(.horizontal, 5.0)
                             .padding(.vertical, 3.0)
                             .background(Color.gray)
                             .font(.system(size: 10, weight: .light, design: .default))
-                            .cornerRadius(5)
+                            .cornerRadius(4)
                             .layoutPriority(1)
                     }
                     .padding(.top, 8)
