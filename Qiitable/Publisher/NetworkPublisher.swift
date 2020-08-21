@@ -40,7 +40,6 @@ struct NetworkPublisher {
                     }
                 }
                 api.resume()
-                
             }
     }
 }
