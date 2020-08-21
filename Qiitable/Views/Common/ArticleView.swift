@@ -6,6 +6,7 @@ struct ArticleView: View {
 
     var body: some View {
         WebView(htmlBody: item.renderedBody!)
+            .edgesIgnoringSafeArea(.top)
     }
 }
 
