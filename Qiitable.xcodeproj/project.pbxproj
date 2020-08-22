@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA294F4624E2EE1D00399DF8 /* StubKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA294F4524E2EE1D00399DF8 /* StubKit */; };
 		AA3EA1F024F009F400D68562 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EA1EF24F009F400D68562 /* WebView.swift */; };
-		AA87A98224F0356C004F2E35 /* emojify.min.js in Resources */ = {isa = PBXBuildFile; fileRef = AA87A97E24F0356C004F2E35 /* emojify.min.js */; };
-		AA87A98324F0356C004F2E35 /* emojify.min.css in Resources */ = {isa = PBXBuildFile; fileRef = AA87A97F24F0356C004F2E35 /* emojify.min.css */; };
-		AA87A98424F0356C004F2E35 /* marked.js in Resources */ = {isa = PBXBuildFile; fileRef = AA87A98024F0356C004F2E35 /* marked.js */; };
-		AA87A98524F0356C004F2E35 /* github-markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = AA87A98124F0356C004F2E35 /* github-markdown.css */; };
-		AA87A98724F035A7004F2E35 /* md.html in Resources */ = {isa = PBXBuildFile; fileRef = AA87A98624F035A7004F2E35 /* md.html */; };
 		DA0F901823DF309A0092E25B /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F901723DF309A0092E25B /* RandomView.swift */; };
 		DA1AC3BF23DC59AD0003FF10 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1AC3BE23DC59AD0003FF10 /* APIError.swift */; };
 		DA21E26F23CCB202003C3CCD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA21E26E23CCB202003C3CCD /* .gitignore */; };
@@ -68,11 +63,6 @@
 
 /* Begin PBXFileReference section */
 		AA3EA1EF24F009F400D68562 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		AA87A97E24F0356C004F2E35 /* emojify.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = emojify.min.js; sourceTree = "<group>"; };
-		AA87A97F24F0356C004F2E35 /* emojify.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = emojify.min.css; sourceTree = "<group>"; };
-		AA87A98024F0356C004F2E35 /* marked.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = marked.js; sourceTree = "<group>"; };
-		AA87A98124F0356C004F2E35 /* github-markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "github-markdown.css"; sourceTree = "<group>"; };
-		AA87A98624F035A7004F2E35 /* md.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = md.html; sourceTree = "<group>"; };
 		DA0F901723DF309A0092E25B /* RandomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		DA1AC3BE23DC59AD0003FF10 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		DA21E26E23CCB202003C3CCD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -140,19 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA87A97D24F03551004F2E35 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				AA87A97F24F0356C004F2E35 /* emojify.min.css */,
-				AA87A97E24F0356C004F2E35 /* emojify.min.js */,
-				AA87A98124F0356C004F2E35 /* github-markdown.css */,
-				AA87A98024F0356C004F2E35 /* marked.js */,
-				AA3EA1EF24F009F400D68562 /* WebView.swift */,
-				AA87A98624F035A7004F2E35 /* md.html */,
-			);
-			path = WebView;
-			sourceTree = "<group>";
-		};
 		AAC9840B24E4225A002D7240 /* Sceens */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +340,7 @@
 		DAF4648C23DC883F0010A2D4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AA87A97D24F03551004F2E35 /* WebView */,
+				AA3EA1EF24F009F400D68562 /* WebView.swift */,
 				DA8683FF23E3052D00FEEBF6 /* Indicator */,
 				DA4A46FC23DC6A6000F9F6BC /* ArticleCell.swift */,
 				DAB366CA23DD11DA00487EB6 /* ArticleView.swift */,
@@ -495,15 +472,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA87A98424F0356C004F2E35 /* marked.js in Resources */,
 				DA21E26F23CCB202003C3CCD /* .gitignore in Resources */,
 				DA832B9E23CCB02E00D528D6 /* LaunchScreen.storyboard in Resources */,
 				DA21E27123CCB20A003C3CCD /* README.md in Resources */,
-				AA87A98324F0356C004F2E35 /* emojify.min.css in Resources */,
-				AA87A98524F0356C004F2E35 /* github-markdown.css in Resources */,
-				AA87A98724F035A7004F2E35 /* md.html in Resources */,
 				DA21E27623CCB322003C3CCD /* Colors.xcassets in Resources */,
-				AA87A98224F0356C004F2E35 /* emojify.min.js in Resources */,
 				DA832B9B23CCB02E00D528D6 /* Preview Assets.xcassets in Resources */,
 				DA832B9823CCB02E00D528D6 /* Assets.xcassets in Resources */,
 			);
