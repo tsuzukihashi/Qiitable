@@ -51,9 +51,13 @@ struct WebView: UIViewRepresentable {
             document.getElementsByTagName('head').item(0).appendChild(newStyle);
             css = document.styleSheets.item(0);
             css.insertRule('body { background-color:#FFFAFA; }', 0);
+            css.insertRule('body { width: 100%; }', 0);
+
             css.insertRule('.code-frame { background-color:#000000; }', 0);
             css.insertRule('.code-frame { color:#00FF00; }', 0);
             css.insertRule('.code-frame { font-size: 40px; }', 0);
+            css.insertRule('.code-frame { width: 100%; }', 0);
+            css.insertRule('.code-frame { overflow-wrap : break-word; }', 0);
 
             css.insertRule('p { font-size: 40px; }', 0);
             css.insertRule('h1 { font-size: 52px; }', 0);
