@@ -1,19 +1,22 @@
 import Foundation
 import Combine
 
-protocol RandomPresenter {
+protocol RandomViewModelObject: ObservableObject {
     func onAppar()
     func getItem()
+    var items: [ItemsResponse] { get set }
+    var errorCode: String { get set }
+    var showAlert: Bool { get set }
+    var showIndicator: Bool { get set }
 }
 
-class RandomPresenterImpl: RandomPresenter, ObservableObject {
-    
+final class RandomViewModel: RandomViewModelObject {
     @Published var items: [ItemsResponse] = []
     @Published var errorCode: String = ""
     @Published var showAlert: Bool = false
     @Published var showIndicator: Bool = true
     
-    var task: AnyCancellable? = nil
+    private var task: AnyCancellable? = nil
     
     func onAppar() {
         getItem()

@@ -150,13 +150,13 @@
 			path = Random;
 			sourceTree = "<group>";
 		};
-		DA1AC3BC23DC598B0003FF10 /* Presenter */ = {
+		DA1AC3BC23DC598B0003FF10 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DABFC3692444BAD0004BB6A4 /* ListViewModel.swift */,
 				DA86840F23E5AACE00FEEBF6 /* RandomPresenterImpl.swift */,
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DA1AC3BD23DC59A30003FF10 /* Error */ = {
@@ -241,8 +241,8 @@
 		DA832B9023CCB02A00D528D6 /* Qiitable */ = {
 			isa = PBXGroup;
 			children = (
-				DAC42C9023DA3E320088F3A4 /* Publisher */,
-				DA1AC3BC23DC598B0003FF10 /* Presenter */,
+				DAC42C9023DA3E320088F3A4 /* Network */,
+				DA1AC3BC23DC598B0003FF10 /* ViewModel */,
 				DAF4648D23DC88670010A2D4 /* Views */,
 				DA832B9123CCB02A00D528D6 /* AppDelegate.swift */,
 				DA832B9323CCB02A00D528D6 /* SceneDelegate.swift */,
@@ -321,12 +321,12 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		DAC42C9023DA3E320088F3A4 /* Publisher */ = {
+		DAC42C9023DA3E320088F3A4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				DAC42C9123DA3E400088F3A4 /* NetworkPublisher.swift */,
 			);
-			path = Publisher;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		DAC6AD6723DDAAC700BD148B /* Search */ = {

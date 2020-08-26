@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct RandomView: View {
-    @EnvironmentObject var randomPresenter: RandomPresenterImpl
+struct RandomView<Model: RandomViewModelObject>: View {
+    @ObservedObject var viewModel: Model
     
     var body: some View {
         Text("RandomView")
@@ -40,6 +40,6 @@ struct RandomView: View {
 
 struct RandomView_Previews: PreviewProvider {
     static var previews: some View {
-        RandomView()
+        RandomView(viewModel: RandomViewModel())
     }
 }

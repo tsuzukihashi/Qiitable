@@ -31,7 +31,7 @@ struct RootView: View {
                     }
             }.tag(TabState.search)
             
-            RandomView()
+            RandomView(viewModel: RandomViewModel())
                 .tabItem {
                     VStack {
                         Image(systemName: "pencil.and.outline")

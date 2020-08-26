@@ -1,8 +1,11 @@
 import Combine
 import Foundation
 
-final class ListViewModel: ObservableObject {
+protocol ListViewModelObject {
 
+}
+
+final class ListViewModel: ObservableObject {
     @Published var items: [ItemsResponse] = []
     private var isLoading = false
     private let perPage = 20
