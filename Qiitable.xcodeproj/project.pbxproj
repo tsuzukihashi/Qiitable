@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AA85D65724F6C9EC0004FA61 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AA85D65624F6C9EB0004FA61 /* Makefile */; };
 		AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */ = {isa = PBXBuildFile; fileRef = AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */; };
+		AAAEB8A124F94723005CF809 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAAEB8A024F94722005CF809 /* README.md */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
 		AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BF24F6C871002896AE /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
+		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		AAE4D0AF24F6C871002896AE = {
 			isa = PBXGroup;
 			children = (
+				AAAEB8A024F94722005CF809 /* README.md */,
 				AA85D65624F6C9EB0004FA61 /* Makefile */,
 				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
 				AAE4D0BA24F6C871002896AE /* Qiitable */,
@@ -196,6 +199,7 @@
 			files = (
 				AAE4D0C824F6C875002896AE /* LaunchScreen.storyboard in Resources */,
 				AAE4D0C524F6C875002896AE /* Preview Assets.xcassets in Resources */,
+				AAAEB8A124F94723005CF809 /* README.md in Resources */,
 				AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */,
 				AAE4D0C224F6C875002896AE /* Assets.xcassets in Resources */,
 			);
