@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA85D65724F6C9EC0004FA61 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AA85D65624F6C9EB0004FA61 /* Makefile */; };
+		AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */ = {isa = PBXBuildFile; fileRef = AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */; };
+		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
+		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
+		AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BF24F6C871002896AE /* ContentView.swift */; };
+		AAE4D0C224F6C875002896AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C124F6C875002896AE /* Assets.xcassets */; };
+		AAE4D0C524F6C875002896AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */; };
+		AAE4D0C824F6C875002896AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */; };
+		AAE4D0D324F6C875002896AE /* QiitableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0D224F6C875002896AE /* QiitableTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE4D0CF24F6C875002896AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE4D0B024F6C871002896AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE4D0B724F6C871002896AE;
+			remoteInfo = Qiitable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
+		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AAE4D0BF24F6C871002896AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAE4D0C124F6C875002896AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAE4D0C724F6C875002896AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAE4D0C924F6C875002896AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE4D0CE24F6C875002896AE /* QiitableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE4D0D224F6C875002896AE /* QiitableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitableTests.swift; sourceTree = "<group>"; };
+		AAE4D0D424F6C875002896AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAE4D0B524F6C871002896AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE4D0CB24F6C875002896AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAE4D0AF24F6C871002896AE = {
+			isa = PBXGroup;
+			children = (
+				AA85D65624F6C9EB0004FA61 /* Makefile */,
+				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
+				AAE4D0BA24F6C871002896AE /* Qiitable */,
+				AAE4D0D124F6C875002896AE /* QiitableTests */,
+				AAE4D0B924F6C871002896AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAE4D0B924F6C871002896AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0B824F6C871002896AE /* Qiitable.app */,
+				AAE4D0CE24F6C875002896AE /* QiitableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE4D0BA24F6C871002896AE /* Qiitable */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0BB24F6C871002896AE /* AppDelegate.swift */,
+				AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */,
+				AAE4D0BF24F6C871002896AE /* ContentView.swift */,
+				AAE4D0C124F6C875002896AE /* Assets.xcassets */,
+				AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */,
+				AAE4D0C924F6C875002896AE /* Info.plist */,
+				AAE4D0C324F6C875002896AE /* Preview Content */,
+			);
+			path = Qiitable;
+			sourceTree = "<group>";
+		};
+		AAE4D0C324F6C875002896AE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAE4D0D124F6C875002896AE /* QiitableTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0D224F6C875002896AE /* QiitableTests.swift */,
+				AAE4D0D424F6C875002896AE /* Info.plist */,
+			);
+			path = QiitableTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAE4D0B724F6C871002896AE /* Qiitable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE4D0D724F6C875002896AE /* Build configuration list for PBXNativeTarget "Qiitable" */;
+			buildPhases = (
+				AAE4D0B424F6C871002896AE /* Sources */,
+				AAE4D0B524F6C871002896AE /* Frameworks */,
+				AAE4D0B624F6C871002896AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Qiitable;
+			productName = Qiitable;
+			productReference = AAE4D0B824F6C871002896AE /* Qiitable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAE4D0CD24F6C875002896AE /* QiitableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE4D0DA24F6C875002896AE /* Build configuration list for PBXNativeTarget "QiitableTests" */;
+			buildPhases = (
+				AAE4D0CA24F6C875002896AE /* Sources */,
+				AAE4D0CB24F6C875002896AE /* Frameworks */,
+				AAE4D0CC24F6C875002896AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE4D0D024F6C875002896AE /* PBXTargetDependency */,
+			);
+			name = QiitableTests;
+			productName = QiitableTests;
+			productReference = AAE4D0CE24F6C875002896AE /* QiitableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAE4D0B024F6C871002896AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ryo Tsuzukihashi";
+				TargetAttributes = {
+					AAE4D0B724F6C871002896AE = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					AAE4D0CD24F6C875002896AE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = AAE4D0B724F6C871002896AE;
+					};
+				};
+			};
+			buildConfigurationList = AAE4D0B324F6C871002896AE /* Build configuration list for PBXProject "Qiitable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAE4D0AF24F6C871002896AE;
+			productRefGroup = AAE4D0B924F6C871002896AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAE4D0B724F6C871002896AE /* Qiitable */,
+				AAE4D0CD24F6C875002896AE /* QiitableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAE4D0B624F6C871002896AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE4D0C824F6C875002896AE /* LaunchScreen.storyboard in Resources */,
+				AAE4D0C524F6C875002896AE /* Preview Assets.xcassets in Resources */,
+				AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */,
+				AAE4D0C224F6C875002896AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE4D0CC24F6C875002896AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAE4D0B424F6C871002896AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */,
+				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
+				AA85D65724F6C9EC0004FA61 /* Makefile in Sources */,
+				AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE4D0CA24F6C875002896AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE4D0D324F6C875002896AE /* QiitableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAE4D0D024F6C875002896AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE4D0B724F6C871002896AE /* Qiitable */;
+			targetProxy = AAE4D0CF24F6C875002896AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAE4D0C724F6C875002896AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAE4D0D524F6C875002896AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAE4D0D624F6C875002896AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAE4D0D824F6C875002896AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiitable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Qiitable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAE4D0D924F6C875002896AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Qiitable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.Qiitable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAE4D0DB24F6C875002896AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiitable.app/Qiitable";
+			};
+			name = Debug;
+		};
+		AAE4D0DC24F6C875002896AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A93B2TPWBT;
+				INFOPLIST_FILE = QiitableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsuzuki817.QiitableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qiitable.app/Qiitable";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAE4D0B324F6C871002896AE /* Build configuration list for PBXProject "Qiitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE4D0D524F6C875002896AE /* Debug */,
+				AAE4D0D624F6C875002896AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE4D0D724F6C875002896AE /* Build configuration list for PBXNativeTarget "Qiitable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE4D0D824F6C875002896AE /* Debug */,
+				AAE4D0D924F6C875002896AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE4D0DA24F6C875002896AE /* Build configuration list for PBXNativeTarget "QiitableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE4D0DB24F6C875002896AE /* Debug */,
+				AAE4D0DC24F6C875002896AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAE4D0B024F6C871002896AE /* Project object */;
+}
