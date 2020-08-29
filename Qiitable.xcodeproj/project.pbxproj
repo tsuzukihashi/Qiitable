@@ -74,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AAAEB8A324FA617C005CF809 /* Entity */,
+				AAAEB8AA24FA6257005CF809 /* Util */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -82,10 +83,49 @@
 			isa = PBXGroup;
 			children = (
 				AAAEB8A424FA61A6005CF809 /* Item.swift */,
-				AAAEB8A624FA61DD005CF809 /* User.swift */,
 				AAAEB8A824FA61EE005CF809 /* Tag.swift */,
+				AAAEB8A624FA61DD005CF809 /* User.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		AAAEB8AA24FA6257005CF809 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEB8AB24FA626E005CF809 /* Extensions */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AAAEB8AB24FA626E005CF809 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAAEB8AC24FA62AD005CF809 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		AAAEB8AD24FA62B9005CF809 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0BB24F6C871002896AE /* AppDelegate.swift */,
+				AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AAAEB8AE24FA62C9005CF809 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0BF24F6C871002896AE /* ContentView.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		AAE4D0AF24F6C871002896AE = {
@@ -113,9 +153,9 @@
 		AAE4D0BA24F6C871002896AE /* Qiitable */ = {
 			isa = PBXGroup;
 			children = (
-				AAE4D0BB24F6C871002896AE /* AppDelegate.swift */,
-				AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */,
-				AAE4D0BF24F6C871002896AE /* ContentView.swift */,
+				AAAEB8AD24FA62B9005CF809 /* App */,
+				AAAEB8AE24FA62C9005CF809 /* Interface */,
+				AAAEB8AC24FA62AD005CF809 /* Util */,
 				AAE4D0C124F6C875002896AE /* Assets.xcassets */,
 				AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */,
 				AAE4D0C924F6C875002896AE /* Info.plist */,
