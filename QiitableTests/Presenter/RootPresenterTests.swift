@@ -1,11 +1,15 @@
 import XCTest
 @testable import Qiitable
 
+class HomePresenterMock: HomePresenter {
+
+}
+
 class RootRouterMock: RootRouter {
     var makeHomeViewCallCount = 0
-    func makeHomeView() -> HomeView {
+    func makeHomeView() -> HomeView<HomePresenterImpl> {
         makeHomeViewCallCount += 1
-        return HomeView()
+        return HomeView(presenter: HomePresenterImpl(router: HomeRouterMock()))
     }
 }
 

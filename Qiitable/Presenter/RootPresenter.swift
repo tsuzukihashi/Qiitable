@@ -1,7 +1,7 @@
 import Foundation
 
 protocol RootPresenter: ObservableObject {
-    func showHomeView() -> HomeView
+    func showHomeView() -> HomeView<HomePresenterImpl>
 }
 
 final class RootPresenterImpl: RootPresenter {
@@ -11,7 +11,7 @@ final class RootPresenterImpl: RootPresenter {
         self.router = router
     }
 
-    func showHomeView() -> HomeView {
+    func showHomeView() -> HomeView<HomePresenterImpl> {
         router.makeHomeView()
     }
 }

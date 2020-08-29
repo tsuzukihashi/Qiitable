@@ -2,11 +2,10 @@ import SwiftUI
 
 struct RootView<Presenter: RootPresenter>: View {
     @ObservedObject var presenter: Presenter
-    @EnvironmentObject private var appState: AppState
 
     var body: some View {
         ZStack {
-            presenter.showHomeView()
+            TabBar(presenter: presenter)
         }
     }
 }
