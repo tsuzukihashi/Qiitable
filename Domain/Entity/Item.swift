@@ -1,20 +1,20 @@
 import Foundation
 
-struct Item: Codable, Identifiable {
-    let id : String
-    let body : String?
-    let coediting : Bool?
-    let commentsCount : Int?
-    let createdAt : String?
-    let group : String?
-    let likesCount : Int?
-    let pageViewsCount : String?
-    let privateField : Bool?
-    let reactionsCount : Int?
-    let renderedBody : String?
-    let tags : [Tag]
-    let title : String
-    let updatedAt : String?
-    let url : String?
-    let user : User
+public struct Item: Codable, Identifiable {
+    public let id : String
+    public let body : String?
+    public let coediting : Bool?
+    public let commentsCount : Int?
+    public let createdAt : String?
+    public let group : String?
+    public let likesCount : Int?
+    public let pageViewsCount : String?
+    public let privateField : Bool?
+    public let reactionsCount : Int?
+    public let renderedBody : String?
+    public let tags : [Tag]
+    public let title : String
+    public let updatedAt : String?
+    public let url : String?
+    public let user : User
 }

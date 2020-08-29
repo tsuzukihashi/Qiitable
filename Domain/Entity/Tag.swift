@@ -1,6 +1,6 @@
 import Foundation
 
-struct Tag : Codable {
-    let name : String?
-    let versions : [String]?
+public struct Tag : Codable {
+    public let name : String?
+    public let versions : [String]?
 }
