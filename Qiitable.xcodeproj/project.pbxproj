@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B324FA657B005CF809 /* ItemRequest.swift */; };
 		AAAEB8B624FA6661005CF809 /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B524FA6661005CF809 /* ItemRepository.swift */; };
 		AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B924FA6795005CF809 /* ItemRepositoryImpl.swift */; };
+		AAAEB8BD24FA6AFA005CF809 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAAEB8BC24FA6AFA005CF809 /* Alamofire */; };
+		AAAEB8C024FA6C7B005CF809 /* NetworkPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8BF24FA6C7B005CF809 /* NetworkPublisher.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
 		AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BF24F6C871002896AE /* ContentView.swift */; };
@@ -47,6 +49,7 @@
 		AAAEB8B324FA657B005CF809 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 		AAAEB8B524FA6661005CF809 /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
 		AAAEB8B924FA6795005CF809 /* ItemRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryImpl.swift; sourceTree = "<group>"; };
+		AAAEB8BF24FA6C7B005CF809 /* NetworkPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPublisher.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAEB8BD24FA6AFA005CF809 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +174,25 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		AAAEB8BE24FA6C3F005CF809 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEB8BF24FA6C7B005CF809 /* NetworkPublisher.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		AAAEB8C124FA7052005CF809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAE4D0C124F6C875002896AE /* Assets.xcassets */,
+				AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */,
+				AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */,
+				AAE4D0C924F6C875002896AE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		AAE4D0AF24F6C871002896AE = {
 			isa = PBXGroup;
 			children = (
@@ -196,24 +219,14 @@
 			isa = PBXGroup;
 			children = (
 				AAAEB8AD24FA62B9005CF809 /* App */,
+				AAAEB8BE24FA6C3F005CF809 /* Infrastructure */,
 				AAAEB8AE24FA62C9005CF809 /* Interface */,
 				AAAEB8B824FA6748005CF809 /* Repository */,
 				AAAEB8B724FA6742005CF809 /* Presenter */,
 				AAAEB8AC24FA62AD005CF809 /* Util */,
-				AAE4D0C124F6C875002896AE /* Assets.xcassets */,
-				AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */,
-				AAE4D0C924F6C875002896AE /* Info.plist */,
-				AAE4D0C324F6C875002896AE /* Preview Content */,
+				AAAEB8C124FA7052005CF809 /* Resources */,
 			);
 			path = Qiitable;
-			sourceTree = "<group>";
-		};
-		AAE4D0C324F6C875002896AE /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		AAE4D0D124F6C875002896AE /* QiitableTests */ = {
@@ -241,6 +254,9 @@
 			dependencies = (
 			);
 			name = Qiitable;
+			packageProductDependencies = (
+				AAAEB8BC24FA6AFA005CF809 /* Alamofire */,
+			);
 			productName = Qiitable;
 			productReference = AAE4D0B824F6C871002896AE /* Qiitable.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +307,9 @@
 				Base,
 			);
 			mainGroup = AAE4D0AF24F6C871002896AE;
+			packageReferences = (
+				AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AAE4D0B924F6C871002896AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +352,7 @@
 				AAAEB8B224FA6432005CF809 /* Endpoint.swift in Sources */,
 				AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */,
 				AAAEB8B624FA6661005CF809 /* ItemRepository.swift in Sources */,
+				AAAEB8C024FA6C7B005CF809 /* NetworkPublisher.swift in Sources */,
 				AAAEB8A724FA61DD005CF809 /* User.swift in Sources */,
 				AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */,
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
@@ -491,7 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Qiitable/Info.plist;
@@ -511,7 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Qiitable/Info.plist;
@@ -601,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAAEB8BC24FA6AFA005CF809 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE4D0B024F6C871002896AE /* Project object */;
 }
