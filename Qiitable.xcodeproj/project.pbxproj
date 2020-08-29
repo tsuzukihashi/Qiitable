@@ -3,13 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA85D65724F6C9EC0004FA61 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AA85D65624F6C9EB0004FA61 /* Makefile */; };
-		AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */ = {isa = PBXBuildFile; fileRef = AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */; };
-		AAAEB8A124F94723005CF809 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAAEB8A024F94722005CF809 /* README.md */; };
 		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
 		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
 		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
@@ -17,7 +14,6 @@
 		AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B324FA657B005CF809 /* ItemRequest.swift */; };
 		AAAEB8B624FA6661005CF809 /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B524FA6661005CF809 /* ItemRepository.swift */; };
 		AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8B924FA6795005CF809 /* ItemRepositoryImpl.swift */; };
-		AAAEB8BD24FA6AFA005CF809 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAAEB8BC24FA6AFA005CF809 /* Alamofire */; };
 		AAAEB8C024FA6C7B005CF809 /* NetworkPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8BF24FA6C7B005CF809 /* NetworkPublisher.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
@@ -68,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAAEB8BD24FA6AFA005CF809 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +250,6 @@
 			);
 			name = Qiitable;
 			packageProductDependencies = (
-				AAAEB8BC24FA6AFA005CF809 /* Alamofire */,
 			);
 			productName = Qiitable;
 			productReference = AAE4D0B824F6C871002896AE /* Qiitable.app */;
@@ -308,7 +302,6 @@
 			);
 			mainGroup = AAE4D0AF24F6C871002896AE;
 			packageReferences = (
-				AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = AAE4D0B924F6C871002896AE /* Products */;
 			projectDirPath = "";
@@ -327,8 +320,6 @@
 			files = (
 				AAE4D0C824F6C875002896AE /* LaunchScreen.storyboard in Resources */,
 				AAE4D0C524F6C875002896AE /* Preview Assets.xcassets in Resources */,
-				AAAEB8A124F94723005CF809 /* README.md in Resources */,
-				AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */,
 				AAE4D0C224F6C875002896AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +347,6 @@
 				AAAEB8A724FA61DD005CF809 /* User.swift in Sources */,
 				AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */,
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
-				AA85D65724F6C9EC0004FA61 /* Makefile in Sources */,
 				AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */,
 				AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */,
 			);
@@ -442,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -514,7 +504,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Qiitable/Info.plist;
+				INFOPLIST_FILE = Qiitable/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,7 +525,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Qiitable/Info.plist;
+				INFOPLIST_FILE = Qiitable/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,25 +613,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		AAAEB8BC24FA6AFA005CF809 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AAAEB8BB24FA6AFA005CF809 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE4D0B024F6C871002896AE /* Project object */;
 }
