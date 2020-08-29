@@ -12,6 +12,6 @@ final class RootPresenterImpl: RootPresenter {
     }
 
     func showHomeView() -> HomeView {
-        router.transitionToHomeView()
+        router.makeHomeView()
     }
 }

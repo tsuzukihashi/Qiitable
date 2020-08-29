@@ -1,16 +1,11 @@
-import SwiftUI
+import Foundation
 
 protocol RootRouter {
-    func transitionToHomeView() -> HomeView
+    func makeHomeView() -> HomeView
 }
 
 final class RootRouterImpl: RootRouter {
-
-    init() {
-
-    }
-    
-    func transitionToHomeView() -> HomeView {
+    func makeHomeView() -> HomeView {
         return HomeView()
     }
 }

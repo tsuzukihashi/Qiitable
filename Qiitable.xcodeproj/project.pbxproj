@@ -19,13 +19,13 @@
 		AAAEB8C524FA860E005CF809 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8C424FA860E005CF809 /* RootPresenter.swift */; };
 		AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8C724FA8743005CF809 /* RootRouter.swift */; };
 		AAAEB8CC24FA88AD005CF809 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8CB24FA88AD005CF809 /* HomeView.swift */; };
+		AAE18E4324FA9058002FC390 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
 		AAE4D0C024F6C871002896AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BF24F6C871002896AE /* RootView.swift */; };
 		AAE4D0C224F6C875002896AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C124F6C875002896AE /* Assets.xcassets */; };
 		AAE4D0C524F6C875002896AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C424F6C875002896AE /* Preview Assets.xcassets */; };
 		AAE4D0C824F6C875002896AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE4D0C624F6C875002896AE /* LaunchScreen.storyboard */; };
-		AAE4D0D324F6C875002896AE /* QiitableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0D224F6C875002896AE /* QiitableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 		AAAEB8C424FA860E005CF809 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		AAAEB8C724FA8743005CF809 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		AAAEB8CB24FA88AD005CF809 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		AAE4D0C724F6C875002896AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAE4D0C924F6C875002896AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE4D0CE24F6C875002896AE /* QiitableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAE4D0D224F6C875002896AE /* QiitableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitableTests.swift; sourceTree = "<group>"; };
 		AAE4D0D424F6C875002896AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +223,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		AAE18E4124FA8FEF002FC390 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		AAE4D0AF24F6C871002896AE = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +271,7 @@
 		AAE4D0D124F6C875002896AE /* QiitableTests */ = {
 			isa = PBXGroup;
 			children = (
-				AAE4D0D224F6C875002896AE /* QiitableTests.swift */,
+				AAE18E4124FA8FEF002FC390 /* Presenter */,
 				AAE4D0D424F6C875002896AE /* Info.plist */,
 			);
 			path = QiitableTests;
@@ -396,7 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE4D0D324F6C875002896AE /* QiitableTests.swift in Sources */,
+				AAE18E4324FA9058002FC390 /* RootPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
