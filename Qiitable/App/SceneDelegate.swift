@@ -6,11 +6,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let contentView = ContentView()
+        let appState = AppState()
+        let rootView = RootView(
+            presenter: RootPresenterImpl(router: RootRouterImpl())
+        ).environmentObject(appState)
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: rootView)
             self.window = window
             window.makeKeyAndVisible()
         }
