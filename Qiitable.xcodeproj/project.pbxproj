@@ -10,6 +10,9 @@
 		AA85D65724F6C9EC0004FA61 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = AA85D65624F6C9EB0004FA61 /* Makefile */; };
 		AA85D65924F6CA970004FA61 /* prepare-for-develop.sh in Resources */ = {isa = PBXBuildFile; fileRef = AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */; };
 		AAAEB8A124F94723005CF809 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AAAEB8A024F94722005CF809 /* README.md */; };
+		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
+		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
+		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
 		AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BF24F6C871002896AE /* ContentView.swift */; };
@@ -33,6 +36,9 @@
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
 		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AAAEB8A424FA61A6005CF809 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AAAEB8A624FA61DD005CF809 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AAAEB8A824FA61EE005CF809 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,12 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAAEB8A224FA616C005CF809 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEB8A324FA617C005CF809 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AAAEB8A324FA617C005CF809 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEB8A424FA61A6005CF809 /* Item.swift */,
+				AAAEB8A624FA61DD005CF809 /* User.swift */,
+				AAAEB8A824FA61EE005CF809 /* Tag.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		AAE4D0AF24F6C871002896AE = {
 			isa = PBXGroup;
 			children = (
 				AAAEB8A024F94722005CF809 /* README.md */,
 				AA85D65624F6C9EB0004FA61 /* Makefile */,
 				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
+				AAAEB8A224FA616C005CF809 /* Domain */,
 				AAE4D0BA24F6C871002896AE /* Qiitable */,
 				AAE4D0D124F6C875002896AE /* QiitableTests */,
 				AAE4D0B924F6C871002896AE /* Products */,
@@ -219,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */,
 				AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */,
+				AAAEB8A724FA61DD005CF809 /* User.swift in Sources */,
+				AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */,
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
 				AA85D65724F6C9EC0004FA61 /* Makefile in Sources */,
 				AAE4D0C024F6C871002896AE /* ContentView.swift in Sources */,
