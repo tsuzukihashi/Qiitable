@@ -1,5 +1,6 @@
 import XCTest
 @testable import Qiitable
+import XCTestExtensions
 
 class HomeUseCaseTests: XCTestCase {
     var subject: HomeUseCaseImpl!
@@ -11,8 +12,7 @@ class HomeUseCaseTests: XCTestCase {
     }
 
     func test_fetch() {
-        XCTContext.runActivity(named: "リクエストされること") { _ in
-
+        XCTxContext("リクエストされること") {
             subject.fetch { _ in }
 
             XCTAssertEqual(repository.fetchCallCount, 1)

@@ -1,1 +1,2 @@
 github "kateinoigakukun/StubKit" "0.1.6"
+github "shindyu/XCTestExtensions" "v0.8"
