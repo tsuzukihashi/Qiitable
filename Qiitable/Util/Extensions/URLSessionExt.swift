@@ -17,13 +17,13 @@ extension URLSession.DataTaskPublisher {
     func validateNetwork() -> Self {
         tryCatch { error -> URLSession.DataTaskPublisher in
             switch error.networkUnavailableReason {
-                // セルラーネットワークが無効
+            // セルラーネットワークが無効
             case .cellular:
                 break
-                // 低データモード
+            // 低データモード
             case .constrained:
                 break
-                // 通信量が大きすぎる
+            // 通信量が大きすぎる
             case .expensive:
                 break
             default:

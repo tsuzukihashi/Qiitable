@@ -94,6 +94,7 @@
 		AAC114F024FBB2670083FFDA /* RouterMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterMockResults.swift; sourceTree = "<group>"; };
 		AAC114F524FBBE640083FFDA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AAC114F824FBBFA80083FFDA /* StubKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StubKit.framework; path = Carthage/Build/iOS/StubKit.framework; sourceTree = "<group>"; };
+		AAC114FE24FBC3A90083FFDA /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -333,6 +334,7 @@
 				AAC114E824FBAAE60083FFDA /* Mintfile */,
 				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
 				AAC114F524FBBE640083FFDA /* .gitignore */,
+				AAC114FE24FBC3A90083FFDA /* .swiftlint.yml */,
 				AAC114F724FBBFA80083FFDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -385,6 +387,7 @@
 				AAE4D0B624F6C871002896AE /* Resources */,
 				AAC114FB24FBBFA80083FFDA /* Embed Frameworks */,
 				AAC114FC24FBBFBA0083FFDA /* ShellScript */,
+				AAC1150024FBC4B40083FFDA /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -512,6 +515,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		AAC1150024FBC4B40083FFDA /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which mint >/dev/null; then\n  mint run swiftlint swiftlint autocorrect --format\n  mint run swiftlint swiftlint\nelse\n  echo \"warning: Mint not installed, download from https://github.com/yonaskolb/Mint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

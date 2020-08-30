@@ -8,7 +8,7 @@ struct HomeView<Presenter: HomePresenter>: View {
             List(presenter.items) { item in
                 Text(item.title)
             }
-        }.onAppear() {
+        }.onAppear {
             self.presenter.onAppear()
         }
     }

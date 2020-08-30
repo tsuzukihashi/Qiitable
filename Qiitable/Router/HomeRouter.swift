@@ -6,5 +6,5 @@ protocol HomeRouter {
 }
 
 final class HomeRouterImpl: HomeRouter {
-    
+
 }
