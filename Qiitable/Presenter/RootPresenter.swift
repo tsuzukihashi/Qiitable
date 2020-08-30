@@ -1,5 +1,6 @@
 import Foundation
 
+/// @mockable
 protocol RootPresenter: ObservableObject {
     func showHomeView() -> HomeView<HomePresenterImpl>
 }

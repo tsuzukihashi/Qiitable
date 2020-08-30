@@ -1,5 +1,6 @@
 import Foundation
 
+/// @mockable
 protocol HomePresenter: ObservableObject {
     var items: [Item] { get set }
     func onAppear()

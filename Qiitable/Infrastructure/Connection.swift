@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+/// @mockable
 protocol Connection {
     var session: URLSession { get }
     func call<T, V>(request: T) -> AnyPublisher<V, Error> where T: RequestType, V: Codable

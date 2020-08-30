@@ -25,6 +25,10 @@
 		AAAEB8C524FA860E005CF809 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8C424FA860E005CF809 /* RootPresenter.swift */; };
 		AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8C724FA8743005CF809 /* RootRouter.swift */; };
 		AAAEB8CC24FA88AD005CF809 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8CB24FA88AD005CF809 /* HomeView.swift */; };
+		AAC114F124FBB2670083FFDA /* PresenterMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114ED24FBB2670083FFDA /* PresenterMockResults.swift */; };
+		AAC114F224FBB2670083FFDA /* UseCaseMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114EE24FBB2670083FFDA /* UseCaseMockResults.swift */; };
+		AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114EF24FBB2670083FFDA /* RepositoryMockResults.swift */; };
+		AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114F024FBB2670083FFDA /* RouterMockResults.swift */; };
 		AAE18E4324FA9058002FC390 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
@@ -67,6 +71,10 @@
 		AAAEB8C724FA8743005CF809 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		AAAEB8CB24FA88AD005CF809 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AAC114E824FBAAE60083FFDA /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
+		AAC114ED24FBB2670083FFDA /* PresenterMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterMockResults.swift; sourceTree = "<group>"; };
+		AAC114EE24FBB2670083FFDA /* UseCaseMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseMockResults.swift; sourceTree = "<group>"; };
+		AAC114EF24FBB2670083FFDA /* RepositoryMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryMockResults.swift; sourceTree = "<group>"; };
+		AAC114F024FBB2670083FFDA /* RouterMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterMockResults.swift; sourceTree = "<group>"; };
 		AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -263,6 +271,17 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		AAC114EC24FBAE570083FFDA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC114ED24FBB2670083FFDA /* PresenterMockResults.swift */,
+				AAC114EF24FBB2670083FFDA /* RepositoryMockResults.swift */,
+				AAC114F024FBB2670083FFDA /* RouterMockResults.swift */,
+				AAC114EE24FBB2670083FFDA /* UseCaseMockResults.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		AAE18E4124FA8FEF002FC390 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +301,7 @@
 				AAAEB8A224FA616C005CF809 /* Domain */,
 				AAE4D0BA24F6C871002896AE /* Qiitable */,
 				AAE4D0D124F6C875002896AE /* QiitableTests */,
+				AAC114EC24FBAE570083FFDA /* Mocks */,
 				AAE4D0B924F6C871002896AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -328,6 +348,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAE4D0D724F6C875002896AE /* Build configuration list for PBXNativeTarget "Qiitable" */;
 			buildPhases = (
+				AAC114EA24FBACA40083FFDA /* Generate Mocks with Mockolo */,
 				AAE4D0B424F6C871002896AE /* Sources */,
 				AAE4D0B524F6C871002896AE /* Frameworks */,
 				AAE4D0B624F6C871002896AE /* Resources */,
@@ -421,16 +442,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAC114EA24FBACA40083FFDA /* Generate Mocks with Mockolo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mocks with Mockolo";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/MockResults.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -n \"$CI\" ]; then\n    echo \"skip generate mocks\"\nelse\n    bash generatemock.sh\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAE4D0B424F6C871002896AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */,
+				AAC114F124FBB2670083FFDA /* PresenterMockResults.swift in Sources */,
 				AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */,
 				AAAEB8B224FA6432005CF809 /* Endpoint.swift in Sources */,
+				AAC114F224FBB2670083FFDA /* UseCaseMockResults.swift in Sources */,
 				AAAEB8CC24FA88AD005CF809 /* HomeView.swift in Sources */,
 				AAAEB8C524FA860E005CF809 /* RootPresenter.swift in Sources */,
+				AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */,
 				AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */,
 				AAAEB8C324FA82CF005CF809 /* AppState.swift in Sources */,
 				AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */,
@@ -444,6 +490,7 @@
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
 				AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */,
 				AAE4D0C024F6C871002896AE /* RootView.swift in Sources */,
+				AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */,
 				AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */,
 				AA1169A924FA950B00CF8654 /* HomePresenter.swift in Sources */,
 			);

@@ -1,5 +1,6 @@
 import Foundation
 
+/// @mockable
 protocol RootRouter {
     func makeHomeView() -> HomeView<HomePresenterImpl>
 }

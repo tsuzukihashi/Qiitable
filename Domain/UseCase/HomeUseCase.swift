@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+/// @mockable
 protocol HomeUseCase {
     func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)
 }
