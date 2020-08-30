@@ -1,5 +1,5 @@
 import Foundation
 
-public enum ErrorMock: Int, Error, Equatable {
+public enum ErrorMock: Error {
     case test
 }
