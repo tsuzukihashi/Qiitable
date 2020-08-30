@@ -11,6 +11,7 @@ final class ConnectionImpl: Connection {
     var session: URLSession
     private let retryCount: Int = 1
     private let successRange = 200 ..< 300
+
     init(session: URLSession) {
         self.session = session
     }
