@@ -13,13 +13,13 @@ public class ItemRepositoryMock: ItemRepository {
 
 
     public var fetchCallCount = 0
-    public var fetchHandler: (() -> (AnyPublisher<[Item], Error>))?
-    public func fetch() -> AnyPublisher<[Item], Error> {
+    public var fetchHandler: ((@escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
+    public func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
         fetchCallCount += 1
         if let fetchHandler = fetchHandler {
-            return fetchHandler()
+            fetchHandler(completion)
         }
-        fatalError("fetchHandler returns can't have a default value thus its handler must be set")
+        
     }
 }
 

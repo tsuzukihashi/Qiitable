@@ -5,6 +5,7 @@
 
 
 import Foundation
+import StubKit
 
 
 class HomePresenterMock: HomePresenter {
