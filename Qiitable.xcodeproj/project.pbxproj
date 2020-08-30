@@ -11,6 +11,8 @@
 		AA1169AB24FA953700CF8654 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AA24FA953700CF8654 /* HomeRouter.swift */; };
 		AA1169AD24FA989300CF8654 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */; };
 		AA1169B124FA9E1300CF8654 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169B024FA9E1300CF8654 /* TabBar.swift */; };
+		AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169B324FABCB500CF8654 /* URLSessionExt.swift */; };
+		AA1169B624FB92F900CF8654 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169B524FB92F800CF8654 /* HomeUseCase.swift */; };
 		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
 		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
 		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
@@ -47,6 +49,8 @@
 		AA1169AA24FA953700CF8654 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		AA1169B024FA9E1300CF8654 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		AA1169B324FABCB500CF8654 /* URLSessionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExt.swift; sourceTree = "<group>"; };
+		AA1169B524FB92F800CF8654 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
 		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		AAAEB8C424FA860E005CF809 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		AAAEB8C724FA8743005CF809 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		AAAEB8CB24FA88AD005CF809 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AAC114E824FBAAE60083FFDA /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
 		AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +112,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		AA1169B224FABC9B00CF8654 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA1169B324FABCB500CF8654 /* URLSessionExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AAAEB8A224FA616C005CF809 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 		AAAEB8AC24FA62AD005CF809 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				AA1169B224FABC9B00CF8654 /* Extensions */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -183,6 +197,7 @@
 		AAAEB8B024FA63C3005CF809 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				AA1169B524FB92F800CF8654 /* HomeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -262,6 +277,7 @@
 			children = (
 				AAAEB8A024F94722005CF809 /* README.md */,
 				AA85D65624F6C9EB0004FA61 /* Makefile */,
+				AAC114E824FBAAE60083FFDA /* Mintfile */,
 				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
 				AAAEB8A224FA616C005CF809 /* Domain */,
 				AAE4D0BA24F6C871002896AE /* Qiitable */,
@@ -424,7 +440,9 @@
 				AAAEB8C024FA6C7B005CF809 /* Connection.swift in Sources */,
 				AAAEB8A724FA61DD005CF809 /* User.swift in Sources */,
 				AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */,
+				AA1169B624FB92F900CF8654 /* HomeUseCase.swift in Sources */,
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
+				AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */,
 				AAE4D0C024F6C871002896AE /* RootView.swift in Sources */,
 				AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */,
 				AA1169A924FA950B00CF8654 /* HomePresenter.swift in Sources */,

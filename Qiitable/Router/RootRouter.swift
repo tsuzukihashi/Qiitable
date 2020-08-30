@@ -6,6 +6,10 @@ protocol RootRouter {
 
 final class RootRouterImpl: RootRouter {
     func makeHomeView() -> HomeView<HomePresenterImpl> {
-        return HomeView(presenter: HomePresenterImpl(router: HomeRouterImpl()))
+        let connection = ConnectionImpl(session: URLSession.shared)
+        let repository = ItemRepositoryImpl(connection: connection)
+        let useCase = HomeUseCaseImpl(repository: repository)
+        let router = HomeRouterImpl()
+        return HomeView(presenter: HomePresenterImpl(router: router, useCase: useCase))
     }
 }

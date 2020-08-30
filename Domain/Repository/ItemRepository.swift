@@ -1,5 +1,6 @@
 import Foundation
+import Combine
 
 public protocol ItemRepository {
-    func fetch(completion: @escaping (Swift.Result<Item, Error>) -> Void)
+    func fetch() -> AnyPublisher<[Item], Error>
 }

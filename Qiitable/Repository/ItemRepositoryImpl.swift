@@ -1,7 +1,14 @@
 import Foundation
+import Combine
 
 final class ItemRepositoryImpl: ItemRepository {
-    func fetch(completion: @escaping (Result<Item, Error>) -> Void) {
-        
+    private let connection: Connection
+    init(connection: Connection) {
+        self.connection = connection
+    }
+
+    func fetch() -> AnyPublisher<[Item], Error> {
+        let request = ItemRequest()
+        return connection.call(request: request)
     }
 }

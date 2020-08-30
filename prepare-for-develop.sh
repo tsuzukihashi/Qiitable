@@ -12,4 +12,6 @@ if !(type "mint" > /dev/null 2>&1); then
     brew install mint
 fi
 
+mint bootstrap
+
 exit 0
