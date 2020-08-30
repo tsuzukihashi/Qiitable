@@ -29,6 +29,9 @@
 		AAC114F224FBB2670083FFDA /* UseCaseMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114EE24FBB2670083FFDA /* UseCaseMockResults.swift */; };
 		AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114EF24FBB2670083FFDA /* RepositoryMockResults.swift */; };
 		AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC114F024FBB2670083FFDA /* RouterMockResults.swift */; };
+		AAC114F924FBBFA80083FFDA /* StubKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC114F824FBBFA80083FFDA /* StubKit.framework */; };
+		AAC114FA24FBBFA80083FFDA /* StubKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AAC114F824FBBFA80083FFDA /* StubKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AAC114FD24FBC1390083FFDA /* StubKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC114F824FBBFA80083FFDA /* StubKit.framework */; };
 		AAE18E4324FA9058002FC390 /* RootPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */; };
 		AAE4D0BC24F6C871002896AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BB24F6C871002896AE /* AppDelegate.swift */; };
 		AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D0BD24F6C871002896AE /* SceneDelegate.swift */; };
@@ -47,6 +50,20 @@
 			remoteInfo = Qiitable;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAC114FB24FBBFA80083FFDA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AAC114FA24FBBFA80083FFDA /* StubKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA1169A824FA950B00CF8654 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -75,6 +92,8 @@
 		AAC114EE24FBB2670083FFDA /* UseCaseMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseMockResults.swift; sourceTree = "<group>"; };
 		AAC114EF24FBB2670083FFDA /* RepositoryMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryMockResults.swift; sourceTree = "<group>"; };
 		AAC114F024FBB2670083FFDA /* RouterMockResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterMockResults.swift; sourceTree = "<group>"; };
+		AAC114F524FBBE640083FFDA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AAC114F824FBBFA80083FFDA /* StubKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StubKit.framework; path = Carthage/Build/iOS/StubKit.framework; sourceTree = "<group>"; };
 		AAE18E4224FA9058002FC390 /* RootPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPresenterTests.swift; sourceTree = "<group>"; };
 		AAE4D0B824F6C871002896AE /* Qiitable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4D0BB24F6C871002896AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC114F924FBBFA80083FFDA /* StubKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC114FD24FBC1390083FFDA /* StubKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +303,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		AAC114F724FBBFA80083FFDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAC114F824FBBFA80083FFDA /* StubKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAE18E4124FA8FEF002FC390 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,15 +323,17 @@
 		AAE4D0AF24F6C871002896AE = {
 			isa = PBXGroup;
 			children = (
-				AAAEB8A024F94722005CF809 /* README.md */,
-				AA85D65624F6C9EB0004FA61 /* Makefile */,
-				AAC114E824FBAAE60083FFDA /* Mintfile */,
-				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
 				AAAEB8A224FA616C005CF809 /* Domain */,
 				AAE4D0BA24F6C871002896AE /* Qiitable */,
 				AAE4D0D124F6C875002896AE /* QiitableTests */,
 				AAC114EC24FBAE570083FFDA /* Mocks */,
 				AAE4D0B924F6C871002896AE /* Products */,
+				AAAEB8A024F94722005CF809 /* README.md */,
+				AA85D65624F6C9EB0004FA61 /* Makefile */,
+				AAC114E824FBAAE60083FFDA /* Mintfile */,
+				AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */,
+				AAC114F524FBBE640083FFDA /* .gitignore */,
+				AAC114F724FBBFA80083FFDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -352,6 +383,8 @@
 				AAE4D0B424F6C871002896AE /* Sources */,
 				AAE4D0B524F6C871002896AE /* Frameworks */,
 				AAE4D0B624F6C871002896AE /* Resources */,
+				AAC114FB24FBBFA80083FFDA /* Embed Frameworks */,
+				AAC114FC24FBBFBA0083FFDA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -461,6 +494,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -n \"$CI\" ]; then\n    echo \"skip generate mocks\"\nelse\n    bash generatemock.sh\nfi\n";
+		};
+		AAC114FC24FBBFBA0083FFDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/StubKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -649,6 +700,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Qiitable/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -670,6 +725,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Qiitable/Resources\"";
 				DEVELOPMENT_TEAM = A93B2TPWBT;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Qiitable/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -690,6 +749,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A93B2TPWBT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitableTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,6 +775,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A93B2TPWBT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitableTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (

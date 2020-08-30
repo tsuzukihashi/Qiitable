@@ -1,6 +1,6 @@
 import Foundation
 
-public struct User: Codable, Identifiable {
+public struct User: Codable, Identifiable, Equatable {
     public let descriptionField : String?
     public let facebookId : String?
     public let followeesCount : Int?

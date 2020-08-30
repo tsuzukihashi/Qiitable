@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Item: Codable, Identifiable {
+public struct Item: Codable, Identifiable, Equatable {
     public let id : String
     public let body : String?
     public let coediting : Bool?
