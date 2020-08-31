@@ -11,6 +11,11 @@ final class ConnectionImpl: Connection {
     var session: URLSession
     private let retryCount: Int = 1
     private let successRange = 200 ..< 300
+    private var decoder: JSONDecoder {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
 
     init(session: URLSession) {
         self.session = session
@@ -23,7 +28,7 @@ final class ConnectionImpl: Connection {
             .validate(statusCode: successRange)
             .retry(retryCount)
             .map { $0.data }
-            .decode(type: V.self, decoder: JSONDecoder())
+            .decode(type: V.self, decoder: decoder)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
