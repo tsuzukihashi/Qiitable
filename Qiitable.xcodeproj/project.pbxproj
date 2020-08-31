@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169B324FABCB500CF8654 /* URLSessionExt.swift */; };
 		AA1169B624FB92F900CF8654 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169B524FB92F800CF8654 /* HomeUseCase.swift */; };
 		AA4D97C724FBECA900799432 /* XCTestCaseExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D97C624FBECA900799432 /* XCTestCaseExt.swift */; };
+		AA781DB424FD55F300F75632 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = AA781DB324FD55F300F75632 /* URLImage */; };
+		AA781DB624FD563E00F75632 /* HomeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DB524FD563E00F75632 /* HomeItemCell.swift */; };
+		AA781DB824FD565100F75632 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DB724FD565100F75632 /* StringExt.swift */; };
 		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
 		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
 		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
@@ -78,6 +81,8 @@
 		AA1169B324FABCB500CF8654 /* URLSessionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExt.swift; sourceTree = "<group>"; };
 		AA1169B524FB92F800CF8654 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		AA4D97C624FBECA900799432 /* XCTestCaseExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExt.swift; sourceTree = "<group>"; };
+		AA781DB524FD563E00F75632 /* HomeItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemCell.swift; sourceTree = "<group>"; };
+		AA781DB724FD565100F75632 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
 		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -126,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA781DB424FD55F300F75632 /* URLImage in Frameworks */,
 				AAC114F924FBBFA80083FFDA /* StubKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +166,7 @@
 		AA1169B224FABC9B00CF8654 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AA781DB724FD565100F75632 /* StringExt.swift */,
 				AA1169B324FABCB500CF8654 /* URLSessionExt.swift */,
 			);
 			path = Extensions;
@@ -312,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				AAAEB8CB24FA88AD005CF809 /* HomeView.swift */,
+				AA781DB524FD563E00F75632 /* HomeItemCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -424,6 +432,7 @@
 			);
 			name = Qiitable;
 			packageProductDependencies = (
+				AA781DB324FD55F300F75632 /* URLImage */,
 			);
 			productName = Qiitable;
 			productReference = AAE4D0B824F6C871002896AE /* Qiitable.app */;
@@ -476,6 +485,7 @@
 			);
 			mainGroup = AAE4D0AF24F6C871002896AE;
 			packageReferences = (
+				AA781DB224FD55F300F75632 /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = AAE4D0B924F6C871002896AE /* Products */;
 			projectDirPath = "";
@@ -581,6 +591,7 @@
 				AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */,
 				AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */,
 				AAAEB8C324FA82CF005CF809 /* AppState.swift in Sources */,
+				AA781DB624FD563E00F75632 /* HomeItemCell.swift in Sources */,
 				AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */,
 				AA1169AB24FA953700CF8654 /* HomeRouter.swift in Sources */,
 				AA1169B124FA9E1300CF8654 /* TabBar.swift in Sources */,
@@ -591,6 +602,7 @@
 				AA1169B624FB92F900CF8654 /* HomeUseCase.swift in Sources */,
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
 				AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */,
+				AA781DB824FD565100F75632 /* StringExt.swift in Sources */,
 				AAE4D0C024F6C871002896AE /* RootView.swift in Sources */,
 				AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */,
 				AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */,
@@ -880,6 +892,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA781DB224FD55F300F75632 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA781DB324FD55F300F75632 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA781DB224FD55F300F75632 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE4D0B024F6C871002896AE /* Project object */;
 }

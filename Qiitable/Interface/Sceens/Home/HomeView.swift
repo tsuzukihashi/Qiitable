@@ -6,7 +6,7 @@ struct HomeView<Presenter: HomePresenter>: View {
     var body: some View {
         NavigationView {
             List(presenter.items) { item in
-                Text(item.title)
+                HomeItemCell(item: item)
             }
         }.onAppear {
             self.presenter.onAppear()

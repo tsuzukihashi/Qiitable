@@ -13,7 +13,7 @@ public struct User: Codable, Identifiable, Equatable {
     public let name: String?
     public let organization: String?
     public let permanentId: Int?
-    public let profileImageUrl: String?
+    public let profileImageUrl: String
     public let teamOnly: Bool?
     public let twitterScreenName: String?
     public let websiteUrl: String?
