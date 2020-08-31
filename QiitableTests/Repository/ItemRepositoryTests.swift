@@ -25,7 +25,29 @@ class ItemRepositoryTests: XCTestCase {
                 }.eraseToAnyPublisher()
             }
             
-            subject.fetch { _ in }
+            subject.fetch { result in
+                if case .success(let items) = result {
+                    XCTAssertEqual(items, [item])
+                }
+            }
+
+            XCTAssertEqual(connection.callCallCount, 1)
+        }
+        XCTxContext("失敗したとき") {
+            connection.callHandler = { req in
+                if let req = req as? ItemRequest {
+                    XCTAssertEqual(req, ItemRequest())
+                }
+                return Future<[Item], Error> { promise in
+                    promise(.failure(ErrorMock.test))
+                }.eraseToAnyPublisher()
+            }
+
+            subject.fetch { result in
+                if case .failure(let error) = result {
+                    XCTAssertEqual(error as! ErrorMock, ErrorMock.test)
+                }
+            }
 
             XCTAssertEqual(connection.callCallCount, 1)
         }
