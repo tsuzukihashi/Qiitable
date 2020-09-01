@@ -8,6 +8,7 @@ struct HomeView<Presenter: HomePresenter>: View {
             List(presenter.items) { item in
                 HomeItemCell(item: item)
             }
+            .navigationBarTitle("新着記事")
         }.onAppear {
             self.presenter.onAppear()
         }
