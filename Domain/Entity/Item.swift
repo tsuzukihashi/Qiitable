@@ -2,6 +2,8 @@ import Foundation
 
 public struct Item: Codable, Identifiable, Equatable {
     public let id: String
+    public let user: User
+    public let tags: [Tag]
     public let body: String?
     public let coediting: Bool?
     public let commentsCount: Int?
@@ -12,9 +14,7 @@ public struct Item: Codable, Identifiable, Equatable {
     public let privateField: Bool?
     public let reactionsCount: Int?
     public let renderedBody: String?
-    public let tags: [Tag]
     public let title: String
     public let updatedAt: String?
     public let url: String?
-    public let user: User
 }

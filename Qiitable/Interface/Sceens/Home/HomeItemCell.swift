@@ -11,7 +11,7 @@ struct HomeItemCell: View {
 
     var body: some View {
         HStack {
-            URLImage(URL(string: "https://help.qiita.com/images/qiitan-button.png")!) { proxy in
+            URLImage(item.user.profileImageUrl.getProfileURL()) { proxy in
                 proxy.image
                     .resizable()
                     .aspectRatio(contentMode: .fill)

@@ -1,9 +1,10 @@
-//
-//  StringExt.swift
-//  Qiitable
-//
-//  Created by Ryo Tsuzukihashi on 2020/09/01.
-//  Copyright © 2020 Ryo Tsuzukihashi. All rights reserved.
-//
-
 import Foundation
+
+extension String {
+    func getProfileURL() -> URL {
+        guard let url = URL(string: self) else {
+            return URL(string: "https://help.qiita.com/images/qiitan-button.png")!
+        }
+        return url
+    }
+}
