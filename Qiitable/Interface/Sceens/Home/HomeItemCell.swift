@@ -18,8 +18,33 @@ struct HomeItemCell: View {
             }
             .frame(width: 44, height: 44)
             .cornerRadius(22)
+            Spacer()
+            VStack(alignment: .leading) {
+                Text(item.title)
+                    .font(.body)
+                    .bold()
 
-            Text(item.title)
+                Text("@" + item.user.id)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 4)
+
+                HStack {
+                    ForEach(item.tags, id: \.name) { (tag: Tag) in
+                        Text(tag.name ?? "")
+                            .bold()
+                            .lineLimit(1)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 5.0)
+                            .padding(.vertical, 3.0)
+                            .background(Color.gray)
+                            .font(.caption)
+                            .cornerRadius(4)
+                            .layoutPriority(1)
+                    }
+                    Spacer()
+                }.padding(.top, 4)
+            }
         }
     }
 }
