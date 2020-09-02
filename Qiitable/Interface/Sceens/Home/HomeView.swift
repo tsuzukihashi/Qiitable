@@ -6,7 +6,9 @@ struct HomeView<Presenter: HomePresenter>: View {
     var body: some View {
         NavigationView {
             List(presenter.items) { item in
-                HomeItemCell(item: item)
+                NavigationLink(destination: ArticleView(item: item)) {
+                    HomeItemCell(item: item)
+                }
             }
             .navigationBarTitle("新着記事")
         }.onAppear {
