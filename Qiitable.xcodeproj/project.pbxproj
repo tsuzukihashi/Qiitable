@@ -19,6 +19,8 @@
 		AA781DB824FD565100F75632 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DB724FD565100F75632 /* StringExt.swift */; };
 		AA781DBA24FFE48800F75632 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DB924FFE48800F75632 /* WebView.swift */; };
 		AA781DBC24FFE4D600F75632 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DBB24FFE4D600F75632 /* ArticleView.swift */; };
+		AA781DBF2501395B00F75632 /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */; };
+		AA781DC12501396E00F75632 /* DataStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DC02501396E00F75632 /* DataStorable.swift */; };
 		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
 		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
 		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
@@ -87,6 +89,8 @@
 		AA781DB724FD565100F75632 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		AA781DB924FFE48800F75632 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		AA781DBB24FFE4D600F75632 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		AA781DC02501396E00F75632 /* DataStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorable.swift; sourceTree = "<group>"; };
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
 		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			children = (
 				AA781DB724FD565100F75632 /* StringExt.swift */,
 				AA1169B324FABCB500CF8654 /* URLSessionExt.swift */,
+				AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */,
+				AA781DC02501396E00F75632 /* DataStorable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +188,13 @@
 				AA4D97C624FBECA900799432 /* XCTestCaseExt.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		AA781DBD2501394A00F75632 /* History */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		AAAEB8A224FA616C005CF809 /* Domain */ = {
@@ -315,6 +328,7 @@
 		AAAEB8C924FA8897005CF809 /* Sceens */ = {
 			isa = PBXGroup;
 			children = (
+				AA781DBD2501394A00F75632 /* History */,
 				AAAEB8CA24FA88A4005CF809 /* Home */,
 			);
 			path = Sceens;
@@ -596,6 +610,7 @@
 				AAAEB8C524FA860E005CF809 /* RootPresenter.swift in Sources */,
 				AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */,
 				AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */,
+				AA781DC12501396E00F75632 /* DataStorable.swift in Sources */,
 				AAAEB8C324FA82CF005CF809 /* AppState.swift in Sources */,
 				AA781DB624FD563E00F75632 /* HomeItemCell.swift in Sources */,
 				AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */,
@@ -604,6 +619,7 @@
 				AA1169B124FA9E1300CF8654 /* TabBar.swift in Sources */,
 				AAAEB8B624FA6661005CF809 /* ItemRepository.swift in Sources */,
 				AA781DBC24FFE4D600F75632 /* ArticleView.swift in Sources */,
+				AA781DBF2501395B00F75632 /* UserDefaultsExt.swift in Sources */,
 				AAAEB8C024FA6C7B005CF809 /* Connection.swift in Sources */,
 				AAAEB8A724FA61DD005CF809 /* User.swift in Sources */,
 				AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */,
