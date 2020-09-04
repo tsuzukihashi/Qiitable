@@ -9,10 +9,6 @@ final class ItemRepositoryImpl: ItemRepository {
         self.connection = connection
     }
 
-    deinit {
-        cancellables.forEach { $0.cancel() }
-    }
-
     func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
         let request = ItemRequest()
         return connection.call(request: request)
