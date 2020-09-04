@@ -21,6 +21,8 @@
 		AA781DBC24FFE4D600F75632 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DBB24FFE4D600F75632 /* ArticleView.swift */; };
 		AA781DBF2501395B00F75632 /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */; };
 		AA781DC12501396E00F75632 /* DataStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DC02501396E00F75632 /* DataStorable.swift */; };
+		AA781DC425013A8500F75632 /* MarkdownRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DC325013A8500F75632 /* MarkdownRules.swift */; };
+		AA781DC625013AB600F75632 /* RegexMarkdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA781DC525013AB600F75632 /* RegexMarkdown.swift */; };
 		AAAEB8A524FA61A6005CF809 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A424FA61A6005CF809 /* Item.swift */; };
 		AAAEB8A724FA61DD005CF809 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A624FA61DD005CF809 /* User.swift */; };
 		AAAEB8A924FA61EE005CF809 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB8A824FA61EE005CF809 /* Tag.swift */; };
@@ -91,6 +93,8 @@
 		AA781DBB24FFE4D600F75632 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
 		AA781DC02501396E00F75632 /* DataStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorable.swift; sourceTree = "<group>"; };
+		AA781DC325013A8500F75632 /* MarkdownRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRules.swift; sourceTree = "<group>"; };
+		AA781DC525013AB600F75632 /* RegexMarkdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexMarkdown.swift; sourceTree = "<group>"; };
 		AA85D65624F6C9EB0004FA61 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		AA85D65824F6CA960004FA61 /* prepare-for-develop.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "prepare-for-develop.sh"; sourceTree = "<group>"; };
 		AAAEB8A024F94722005CF809 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -197,6 +201,15 @@
 			path = History;
 			sourceTree = "<group>";
 		};
+		AA781DC225013A6D00F75632 /* Markdown */ = {
+			isa = PBXGroup;
+			children = (
+				AA781DC325013A8500F75632 /* MarkdownRules.swift */,
+				AA781DC525013AB600F75632 /* RegexMarkdown.swift */,
+			);
+			path = Markdown;
+			sourceTree = "<group>";
+		};
 		AAAEB8A224FA616C005CF809 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +249,7 @@
 		AAAEB8AC24FA62AD005CF809 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				AA781DC225013A6D00F75632 /* Markdown */,
 				AA1169B224FABC9B00CF8654 /* Extensions */,
 			);
 			path = Util;
@@ -614,6 +628,7 @@
 				AAAEB8C324FA82CF005CF809 /* AppState.swift in Sources */,
 				AA781DB624FD563E00F75632 /* HomeItemCell.swift in Sources */,
 				AAAEB8B424FA657B005CF809 /* ItemRequest.swift in Sources */,
+				AA781DC625013AB600F75632 /* RegexMarkdown.swift in Sources */,
 				AA781DBA24FFE48800F75632 /* WebView.swift in Sources */,
 				AA1169AB24FA953700CF8654 /* HomeRouter.swift in Sources */,
 				AA1169B124FA9E1300CF8654 /* TabBar.swift in Sources */,
@@ -628,6 +643,7 @@
 				AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */,
 				AA781DB824FD565100F75632 /* StringExt.swift in Sources */,
 				AAE4D0C024F6C871002896AE /* RootView.swift in Sources */,
+				AA781DC425013A8500F75632 /* MarkdownRules.swift in Sources */,
 				AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */,
 				AAAEB8BA24FA6795005CF809 /* ItemRepositoryImpl.swift in Sources */,
 				AA1169A924FA950B00CF8654 /* HomePresenter.swift in Sources */,

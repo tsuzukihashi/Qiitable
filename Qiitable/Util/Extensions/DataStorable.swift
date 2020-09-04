@@ -1,5 +1,5 @@
 import Foundation
 
-protocol DataStorable {
+protocol DataStorable: UserDefaults {
 
 }
