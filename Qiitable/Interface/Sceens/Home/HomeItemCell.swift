@@ -29,21 +29,8 @@ struct HomeItemCell: View {
                     .foregroundColor(.gray)
                     .padding(.bottom, 4)
 
-                HStack {
-                    ForEach(item.tags, id: \.name) { (tag: Tag) in
-                        Text(tag.name ?? "")
-                            .bold()
-                            .lineLimit(1)
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 5.0)
-                            .padding(.vertical, 3.0)
-                            .background(Color.gray)
-                            .font(.caption)
-                            .cornerRadius(4)
-                            .layoutPriority(1)
-                    }
-                    Spacer()
-                }.padding(.top, 4)
+                TagsView(tags: item.tags)
+                    .padding(.top, 4)
             }
         }
     }

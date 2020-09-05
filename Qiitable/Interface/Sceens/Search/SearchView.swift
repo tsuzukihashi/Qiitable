@@ -14,7 +14,7 @@ struct SearchView: View {
                 // Search Action...
 
             }.textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
+                .padding()
             Spacer()
         }
     }
