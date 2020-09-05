@@ -23,7 +23,6 @@ struct RegexMarkdown {
         let matcher = try? NSRegularExpression(pattern: #"((http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*))"#)
         guard let match = matcher?.firstMatch(in: string, range: NSRange(location: 0, length: string.utf16.count)) else { return ""}
         let result = string[Range(match.range, in: string)!]
-        print(result)
         return String(result)
     }
 }

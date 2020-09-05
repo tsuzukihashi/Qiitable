@@ -20,8 +20,9 @@ class HomePresenterrTests: XCTestCase {
     func test_onAppear() {
         XCTxContext("リクエストが成功したとき、記事が取得されること") {
             let stub = try! Stub.make(Item.self)
-            useCase.fetchHandler = { completion in
+            useCase.fetchHandler = { offset, completion in
                 completion(.success([stub]))
+                XCTAssertEqual(offset, 1)
             }
 
             subject.onAppear()
@@ -30,13 +31,67 @@ class HomePresenterrTests: XCTestCase {
             XCTAssertEqual(subject.items, [stub])
         }
         XCTxContext("リクエストが失敗したとき") {
-            useCase.fetchHandler = { completion in
+            useCase.fetchHandler = { offset, completion in
                 completion(.failure(ErrorMock.test))
+                XCTAssertEqual(offset, 1)
             }
 
             subject.onAppear()
 
             XCTAssertEqual(useCase.fetchCallCount, 1)
+        }
+    }
+
+    func test_loadNext() {
+        XCTxContext("最後のセルのとき、正常にリクエストされること") {
+            var items: [Item] = (0..<20).map { num in
+                return try! Stub.make(Item.self) {
+                    $0.set(\.id, value: String(num))
+                }
+            }
+            let lastItem = try! Stub.make(Item.self) {
+                $0.set(\.id, value: "last-item-id")
+            }
+            items.append(lastItem)
+            useCase.fetchHandler = { offset, completion in
+                completion(.success(items))
+                XCTAssertEqual(offset, 1)
+            }
+            subject.onAppear()
+            XCTAssertEqual(useCase.fetchCallCount, 1)
+
+            useCase.fetchHandler = { offset, completion in
+                completion(.success(items))
+                XCTAssertEqual(offset, 2)
+            }
+            let expectedItems = items + items
+            subject.loadNext(item: lastItem)
+
+            XCTAssertEqual(useCase.fetchCallCount, 2)
+            XCTAssertEqual(subject.isLoading, false)
+            XCTAssertEqual(subject.nextPage, 2)
+            XCTAssertEqual(subject.items, expectedItems)
+        }
+        XCTxContext("最後のセルでないとき、リクエストされないこと") {
+            let items: [Item] = (0..<20).map { num in
+                return try! Stub.make(Item.self) {
+                    $0.set(\.id, value: String(num))
+                }
+            }
+
+            useCase.fetchHandler = { offset, completion in
+                completion(.success(items))
+                XCTAssertEqual(offset, 1)
+            }
+            subject.onAppear()
+            XCTAssertEqual(useCase.fetchCallCount, 1)
+
+            subject.loadNext(item: items.first!)
+
+            XCTAssertEqual(useCase.fetchCallCount, 1)
+            XCTAssertEqual(subject.isLoading, false)
+            XCTAssertEqual(subject.nextPage, 1)
+            XCTAssertEqual(subject.items, items)
         }
     }
 }

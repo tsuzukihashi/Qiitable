@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA10F4CC2503B52F00BAD484 /* RandomAccessCollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F4CB2503B52F00BAD484 /* RandomAccessCollectionExt.swift */; };
 		AA1169A924FA950B00CF8654 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169A824FA950B00CF8654 /* HomePresenter.swift */; };
 		AA1169AB24FA953700CF8654 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AA24FA953700CF8654 /* HomeRouter.swift */; };
 		AA1169AD24FA989300CF8654 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA10F4CB2503B52F00BAD484 /* RandomAccessCollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExt.swift; sourceTree = "<group>"; };
 		AA1169A824FA950B00CF8654 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AA1169AA24FA953700CF8654 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				AA1169B324FABCB500CF8654 /* URLSessionExt.swift */,
 				AA781DBE2501395B00F75632 /* UserDefaultsExt.swift */,
 				AA781DC02501396E00F75632 /* DataStorable.swift */,
+				AA10F4CB2503B52F00BAD484 /* RandomAccessCollectionExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				AAE4D0BE24F6C871002896AE /* SceneDelegate.swift in Sources */,
 				AA1169B424FABCB500CF8654 /* URLSessionExt.swift in Sources */,
 				AA781DB824FD565100F75632 /* StringExt.swift in Sources */,
+				AA10F4CC2503B52F00BAD484 /* RandomAccessCollectionExt.swift in Sources */,
 				AAE4D0C024F6C871002896AE /* RootView.swift in Sources */,
 				AA781DC425013A8500F75632 /* MarkdownRules.swift in Sources */,
 				AAC114F324FBB2670083FFDA /* RepositoryMockResults.swift in Sources */,

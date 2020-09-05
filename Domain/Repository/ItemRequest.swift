@@ -12,7 +12,8 @@ public struct ItemRequest: RequestType, Equatable {
     public func makeURLRequest() -> URLRequest {
         var components = URLComponents(string: endpoint.urlString)
         components?.queryItems = [
-
+            URLQueryItem(name: "page", value: String(page)),
+            URLQueryItem(name: "per_page", value: "20")
         ]
 
         guard let url = components?.url else { fatalError() }
@@ -21,7 +22,8 @@ public struct ItemRequest: RequestType, Equatable {
         return request
     }
 
-    public init() {
-
+    private let page: Int
+    public init(page: Int) {
+        self.page = page
     }
 }

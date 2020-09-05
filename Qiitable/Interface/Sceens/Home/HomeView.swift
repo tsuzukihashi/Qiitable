@@ -8,6 +8,9 @@ struct HomeView: View {
             List(presenter.items) { item in
                 NavigationLink(destination: ArticleView(item: item)) {
                     HomeItemCell(item: item)
+                        .onAppear {
+                            self.presenter.loadNext(item: item)
+                    }
                 }
             }
             .navigationBarTitle("新着記事")

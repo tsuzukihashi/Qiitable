@@ -12,7 +12,7 @@ class HomeUseCaseTests: XCTestCase {
     
     func test_fetch() {
         XCTxContext("リクエストされること") {
-            subject.fetch { _ in }
+            subject.fetch(page: 1) { _ in }
             
             XCTAssertEqual(repository.fetchCallCount, 1)
         }

@@ -3,5 +3,5 @@ import Combine
 
 /// @mockable
 public protocol ItemRepository {
-    func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)
+    func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)
 }

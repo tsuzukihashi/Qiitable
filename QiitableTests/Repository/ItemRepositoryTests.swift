@@ -18,14 +18,14 @@ class ItemRepositoryTests: XCTestCase {
 
             connection.callHandler = { req in
                 if let req = req as? ItemRequest {
-                    XCTAssertEqual(req, ItemRequest())
+                    XCTAssertEqual(req, ItemRequest(page: 1))
                 }
                 return Future<[Item], Error> { promise in
                     promise(.success([item]))
                 }.eraseToAnyPublisher()
             }
             
-            subject.fetch { result in
+            subject.fetch(page: 1) { result in
                 if case .success(let items) = result {
                     XCTAssertEqual(items, [item])
                 }
@@ -36,14 +36,14 @@ class ItemRepositoryTests: XCTestCase {
         XCTxContext("失敗したとき") {
             connection.callHandler = { req in
                 if let req = req as? ItemRequest {
-                    XCTAssertEqual(req, ItemRequest())
+                    XCTAssertEqual(req, ItemRequest(page: 1))
                 }
                 return Future<[Item], Error> { promise in
                     promise(.failure(ErrorMock.test))
                 }.eraseToAnyPublisher()
             }
 
-            subject.fetch { result in
+            subject.fetch(page: 1) { result in
                 if case .failure(let error) = result {
                     XCTAssertEqual(error as! ErrorMock, ErrorMock.test)
                 }

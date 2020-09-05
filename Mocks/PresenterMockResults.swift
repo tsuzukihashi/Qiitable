@@ -27,6 +27,16 @@ class HomePresenterMock: HomePresenter {
         }
         
     }
+
+    var loadNextCallCount = 0
+    var loadNextHandler: ((Item) -> ())?
+    func loadNext(item: Item)  {
+        loadNextCallCount += 1
+        if let loadNextHandler = loadNextHandler {
+            loadNextHandler(item)
+        }
+        
+    }
 }
 
 class RootPresenterMock: RootPresenter {

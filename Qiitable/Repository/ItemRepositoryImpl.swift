@@ -9,8 +9,8 @@ final class ItemRepositoryImpl: ItemRepository {
         self.connection = connection
     }
 
-    func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
-        let request = ItemRequest()
+    func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
+        let request = ItemRequest(page: page)
         return connection.call(request: request)
             .sink(receiveCompletion: { result in
                 switch result {

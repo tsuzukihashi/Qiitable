@@ -2,7 +2,7 @@ import Foundation
 
 /// @mockable
 protocol HomeUseCase {
-    func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)
+    func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)
 }
 
 final class HomeUseCaseImpl: HomeUseCase {
@@ -12,7 +12,7 @@ final class HomeUseCaseImpl: HomeUseCase {
         self.repository = repository
     }
 
-    func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
-        repository.fetch(completion: completion)
+    func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
+        repository.fetch(page: page, completion: completion)
     }
 }

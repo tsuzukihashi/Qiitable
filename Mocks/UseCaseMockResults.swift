@@ -12,11 +12,11 @@ class HomeUseCaseMock: HomeUseCase {
 
 
     var fetchCallCount = 0
-    var fetchHandler: ((@escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
-    func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
+    var fetchHandler: ((Int, @escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
+    func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
         fetchCallCount += 1
         if let fetchHandler = fetchHandler {
-            fetchHandler(completion)
+            fetchHandler(page, completion)
         }
         
     }

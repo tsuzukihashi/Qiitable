@@ -13,11 +13,11 @@ public class ItemRepositoryMock: ItemRepository {
 
 
     public var fetchCallCount = 0
-    public var fetchHandler: ((@escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
-    public func fetch(completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
+    public var fetchHandler: ((Int, @escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
+    public func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
         fetchCallCount += 1
         if let fetchHandler = fetchHandler {
-            fetchHandler(completion)
+            fetchHandler(page, completion)
         }
         
     }
