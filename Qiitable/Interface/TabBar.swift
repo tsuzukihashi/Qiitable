@@ -1,8 +1,8 @@
 import SwiftUI
 
-struct TabBar<Presenter: RootPresenter>: View {
+struct TabBar: View {
     @EnvironmentObject var appState: AppState
-    @ObservedObject var presenter: Presenter
+    @ObservedObject var presenter: RootPresenterImpl
 
     var body: some View {
         TabView(selection: $appState.tabState) {

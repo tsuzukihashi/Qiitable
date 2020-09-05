@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct RootView<Presenter: RootPresenter>: View {
-    @ObservedObject var presenter: Presenter
+struct RootView: View {
+    @ObservedObject var presenter: RootPresenterImpl
 
     var body: some View {
         ZStack {

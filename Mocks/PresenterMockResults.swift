@@ -34,8 +34,8 @@ class RootPresenterMock: RootPresenter {
 
 
     var showHomeViewCallCount = 0
-    var showHomeViewHandler: (() -> (HomeView<HomePresenterImpl>))?
-    func showHomeView() -> HomeView<HomePresenterImpl> {
+    var showHomeViewHandler: (() -> (HomeView))?
+    func showHomeView() -> HomeView {
         showHomeViewCallCount += 1
         if let showHomeViewHandler = showHomeViewHandler {
             return showHomeViewHandler()

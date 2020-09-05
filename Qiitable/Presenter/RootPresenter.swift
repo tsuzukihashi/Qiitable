@@ -3,7 +3,7 @@ import StubKit
 
 /// @mockable
 protocol RootPresenter: ObservableObject {
-    func showHomeView() -> HomeView<HomePresenterImpl>
+    func showHomeView() -> HomeView
 }
 
 final class RootPresenterImpl: RootPresenter {
@@ -13,7 +13,7 @@ final class RootPresenterImpl: RootPresenter {
         self.router = router
     }
 
-    func showHomeView() -> HomeView<HomePresenterImpl> {
+    func showHomeView() -> HomeView {
         router.makeHomeView()
     }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct HomeView<Presenter: HomePresenter>: View {
-    @ObservedObject var presenter: Presenter
+struct HomeView: View {
+    @ObservedObject var presenter: HomePresenterImpl
 
     var body: some View {
         NavigationView {

@@ -2,11 +2,11 @@ import Foundation
 
 /// @mockable
 protocol RootRouter {
-    func makeHomeView() -> HomeView<HomePresenterImpl>
+    func makeHomeView() -> HomeView
 }
 
 final class RootRouterImpl: RootRouter {
-    func makeHomeView() -> HomeView<HomePresenterImpl> {
+    func makeHomeView() -> HomeView {
         let connection = ConnectionImpl(session: URLSession.shared)
         let repository = ItemRepositoryImpl(connection: connection)
         let useCase = HomeUseCaseImpl(repository: repository)

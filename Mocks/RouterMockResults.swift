@@ -18,8 +18,8 @@ class RootRouterMock: RootRouter {
 
 
     var makeHomeViewCallCount = 0
-    var makeHomeViewHandler: (() -> (HomeView<HomePresenterImpl>))?
-    func makeHomeView() -> HomeView<HomePresenterImpl> {
+    var makeHomeViewHandler: (() -> (HomeView))?
+    func makeHomeView() -> HomeView {
         makeHomeViewCallCount += 1
         if let makeHomeViewHandler = makeHomeViewHandler {
             return makeHomeViewHandler()
