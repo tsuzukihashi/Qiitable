@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA10F4CC2503B52F00BAD484 /* RandomAccessCollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F4CB2503B52F00BAD484 /* RandomAccessCollectionExt.swift */; };
+		AA10F4CF2504150200BAD484 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10F4CE2504150200BAD484 /* SearchView.swift */; };
 		AA1169A924FA950B00CF8654 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169A824FA950B00CF8654 /* HomePresenter.swift */; };
 		AA1169AB24FA953700CF8654 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AA24FA953700CF8654 /* HomeRouter.swift */; };
 		AA1169AD24FA989300CF8654 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */; };
@@ -82,6 +83,7 @@
 
 /* Begin PBXFileReference section */
 		AA10F4CB2503B52F00BAD484 /* RandomAccessCollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomAccessCollectionExt.swift; sourceTree = "<group>"; };
+		AA10F4CE2504150200BAD484 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AA1169A824FA950B00CF8654 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AA1169AA24FA953700CF8654 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		AA1169AC24FA989300CF8654 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA10F4CD250414EA00BAD484 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AA10F4CE2504150200BAD484 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		AA1169AE24FA9A3900CF8654 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,8 +355,9 @@
 		AAAEB8C924FA8897005CF809 /* Sceens */ = {
 			isa = PBXGroup;
 			children = (
-				AA781DBD2501394A00F75632 /* History */,
 				AAAEB8CA24FA88A4005CF809 /* Home */,
+				AA10F4CD250414EA00BAD484 /* Search */,
+				AA781DBD2501394A00F75632 /* History */,
 			);
 			path = Sceens;
 			sourceTree = "<group>";
@@ -627,6 +638,7 @@
 				AAAEB8C524FA860E005CF809 /* RootPresenter.swift in Sources */,
 				AAC114F424FBB2670083FFDA /* RouterMockResults.swift in Sources */,
 				AAAEB8C824FA8743005CF809 /* RootRouter.swift in Sources */,
+				AA10F4CF2504150200BAD484 /* SearchView.swift in Sources */,
 				AA781DC12501396E00F75632 /* DataStorable.swift in Sources */,
 				AAAEB8C324FA82CF005CF809 /* AppState.swift in Sources */,
 				AA781DB624FD563E00F75632 /* HomeItemCell.swift in Sources */,

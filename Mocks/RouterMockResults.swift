@@ -26,5 +26,15 @@ class RootRouterMock: RootRouter {
         }
         fatalError("makeHomeViewHandler returns can't have a default value thus its handler must be set")
     }
+
+    var makeSearchViewCallCount = 0
+    var makeSearchViewHandler: (() -> (SearchView))?
+    func makeSearchView() -> SearchView {
+        makeSearchViewCallCount += 1
+        if let makeSearchViewHandler = makeSearchViewHandler {
+            return makeSearchViewHandler()
+        }
+        fatalError("makeSearchViewHandler returns can't have a default value thus its handler must be set")
+    }
 }
 

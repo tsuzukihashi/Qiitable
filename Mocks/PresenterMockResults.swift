@@ -52,5 +52,15 @@ class RootPresenterMock: RootPresenter {
         }
         fatalError("showHomeViewHandler returns can't have a default value thus its handler must be set")
     }
+
+    var showSearchViewCallCount = 0
+    var showSearchViewHandler: (() -> (SearchView))?
+    func showSearchView() -> SearchView {
+        showSearchViewCallCount += 1
+        if let showSearchViewHandler = showSearchViewHandler {
+            return showSearchViewHandler()
+        }
+        fatalError("showSearchViewHandler returns can't have a default value thus its handler must be set")
+    }
 }
 
