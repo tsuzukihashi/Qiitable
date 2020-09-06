@@ -16,7 +16,7 @@ struct TabBar: View {
             }
             .tag(TabState.home)
 
-            presenter.showSearchView()
+            presenter.showSearchTopView()
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")

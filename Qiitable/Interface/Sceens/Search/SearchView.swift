@@ -1,27 +1,45 @@
 import SwiftUI
 
-struct SearchView: View {
-    @State private var searchText: String = ""
+struct SearchTopView: View {
+    @ObservedObject var presenter: SearchTopPresenterImpl
 
     var body: some View {
-        VStack {
-            TextField(
-                "気になる技術を調べよう！",
-                text: $searchText,
-                onEditingChanged: { _ in
+        NavigationView {
+            VStack {
+                TextField(
+                    "気になる技術を調べよう！",
+                    text: $presenter.searchText,
+                    onEditingChanged: { _ in
+                }) {
+                    self.presenter.onCommit()
+                }.textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                Spacer()
 
-            }) {
-                // Search Action...
+                List {
+                    Section(header: Text("検索履歴"), content: {
+                        ForEach(presenter.historyItems, id: \.self) { text in
+                            Text(text)
+                        }
+                    })
+                }
 
-            }.textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            Spacer()
+                NavigationLink(destination: self.presenter.showSearchListView(), isActive: self.$presenter.isSearch) {
+                    EmptyView.init()
+                }
+            }
+            .navigationBarTitle("検索", displayMode: .inline)
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
+struct SearchTopView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        let router = SearchTopRouterImpl()
+        let useCase = SeaerchTopUseCaseImpl()
+        let presenter = SearchTopPresenterImpl(router: router, useCase: useCase)
+        return
+            SearchTopView(presenter: presenter)
     }
 }

@@ -21,5 +21,15 @@ public class ItemRepositoryMock: ItemRepository {
         }
         
     }
+
+    public var searchCallCount = 0
+    public var searchHandler: ((String, Int, @escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
+    public func search(query: String, page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
+        searchCallCount += 1
+        if let searchHandler = searchHandler {
+            searchHandler(query, page, completion)
+        }
+        
+    }
 }
 

@@ -3,7 +3,7 @@ import Foundation
 /// @mockable
 protocol RootRouter {
     func makeHomeView() -> HomeView
-    func makeSearchView() -> SearchView
+    func makeSearchTopView() -> SearchTopView
 }
 
 final class RootRouterImpl: RootRouter {
@@ -15,7 +15,10 @@ final class RootRouterImpl: RootRouter {
         return HomeView(presenter: HomePresenterImpl(router: router, useCase: useCase))
     }
 
-    func makeSearchView() -> SearchView {
-        return SearchView()
+    func makeSearchTopView() -> SearchTopView {
+        let router = SearchTopRouterImpl()
+        let useCase = SeaerchTopUseCaseImpl()
+        let presenter = SearchTopPresenterImpl(router: router, useCase: useCase)
+        return SearchTopView(presenter: presenter)
     }
 }

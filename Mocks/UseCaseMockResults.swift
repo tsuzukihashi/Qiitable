@@ -22,3 +22,33 @@ class HomeUseCaseMock: HomeUseCase {
     }
 }
 
+class SearchListUseCaseMock: SearchListUseCase {
+    init() { }
+
+
+    var fetchCallCount = 0
+    var fetchHandler: ((String, Int, @escaping (Swift.Result<[Item], Error>) -> Void) -> ())?
+    func fetch(query: String, page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void)  {
+        fetchCallCount += 1
+        if let fetchHandler = fetchHandler {
+            fetchHandler(query, page, completion)
+        }
+        
+    }
+}
+
+class SearchTopUseCaseMock: SearchTopUseCase {
+    init() { }
+
+
+    var fetchCallCount = 0
+    var fetchHandler: ((String) -> ())?
+    func fetch(query: String)  {
+        fetchCallCount += 1
+        if let fetchHandler = fetchHandler {
+            fetchHandler(query)
+        }
+        
+    }
+}
+

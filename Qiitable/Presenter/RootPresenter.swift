@@ -4,7 +4,7 @@ import StubKit
 /// @mockable
 protocol RootPresenter: ObservableObject {
     func showHomeView() -> HomeView
-    func showSearchView() -> SearchView
+    func showSearchTopView() -> SearchTopView
 }
 
 final class RootPresenterImpl: RootPresenter {
@@ -18,7 +18,7 @@ final class RootPresenterImpl: RootPresenter {
         router.makeHomeView()
     }
 
-    func showSearchView() -> SearchView {
-        router.makeSearchView()
+    func showSearchTopView() -> SearchTopView {
+        router.makeSearchTopView()
     }
 }

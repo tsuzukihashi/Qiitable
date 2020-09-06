@@ -16,6 +16,10 @@ public struct ItemRequest: RequestType, Equatable {
             URLQueryItem(name: "per_page", value: "20")
         ]
 
+        if let query = query {
+            components?.queryItems?.append(URLQueryItem(name: "query", value: query))
+        }
+
         guard let url = components?.url else { fatalError() }
         var request = URLRequest(url: url)
         request.httpMethod = HTTPMethod.GET.rawValue
@@ -23,7 +27,9 @@ public struct ItemRequest: RequestType, Equatable {
     }
 
     private let page: Int
-    public init(page: Int) {
+    private let query: String?
+    public init(page: Int, query: String?) {
         self.page = page
+        self.query = query
     }
 }

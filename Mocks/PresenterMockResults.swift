@@ -4,6 +4,7 @@
 
 
 
+import Combine
 import Foundation
 import StubKit
 
@@ -53,14 +54,14 @@ class RootPresenterMock: RootPresenter {
         fatalError("showHomeViewHandler returns can't have a default value thus its handler must be set")
     }
 
-    var showSearchViewCallCount = 0
-    var showSearchViewHandler: (() -> (SearchView))?
-    func showSearchView() -> SearchView {
-        showSearchViewCallCount += 1
-        if let showSearchViewHandler = showSearchViewHandler {
-            return showSearchViewHandler()
+    var showSearchTopViewCallCount = 0
+    var showSearchTopViewHandler: (() -> (SearchTopView))?
+    func showSearchTopView() -> SearchTopView {
+        showSearchTopViewCallCount += 1
+        if let showSearchTopViewHandler = showSearchTopViewHandler {
+            return showSearchTopViewHandler()
         }
-        fatalError("showSearchViewHandler returns can't have a default value thus its handler must be set")
+        fatalError("showSearchTopViewHandler returns can't have a default value thus its handler must be set")
     }
 }
 

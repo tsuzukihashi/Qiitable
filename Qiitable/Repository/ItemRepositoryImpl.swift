@@ -10,7 +10,7 @@ final class ItemRepositoryImpl: ItemRepository {
     }
 
     func fetch(page: Int, completion: @escaping (Swift.Result<[Item], Error>) -> Void) {
-        let request = ItemRequest(page: page)
+        let request = ItemRequest(page: page, query: nil)
         return connection.call(request: request)
             .sink(receiveCompletion: { result in
                 switch result {
@@ -22,5 +22,20 @@ final class ItemRepositoryImpl: ItemRepository {
             }, receiveValue: { items in
                 completion(.success(items))
             }).store(in: &cancellables)
+    }
+
+    func search(query: String, page: Int, completion: @escaping (Result<[Item], Error>) -> Void) {
+        let request = ItemRequest(page: page, query: query)
+        return connection.call(request: request)
+            .sink(receiveCompletion: { result in
+                switch result {
+                case .finished:
+                    break
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }) { items in
+                completion(.success(items))
+        }.store(in: &cancellables)
     }
 }
