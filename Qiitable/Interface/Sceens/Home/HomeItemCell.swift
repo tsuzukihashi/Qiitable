@@ -1,5 +1,4 @@
 import SwiftUI
-import StubKit
 import URLImage
 
 struct HomeItemCell: View {
@@ -38,7 +37,6 @@ struct HomeItemCell: View {
 
 struct HomeItemCell_Previews: PreviewProvider {
     static var previews: some View {
-        let item = try? Stub.make(Item.self)
-        return HomeItemCell(item: item!)
+        return HomeItemCell(item: ItemFixture.test())
     }
 }

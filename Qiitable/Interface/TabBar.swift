@@ -13,8 +13,8 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("home")
                     }
-            }
-            .tag(TabState.home)
+                }
+                .tag(TabState.home)
 
             presenter.showSearchTopView()
                 .tabItem {
@@ -23,7 +23,7 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("search")
                     }
-            }.tag(TabState.search)
+                }.tag(TabState.search)
 
             Text("random")
                 .tabItem {
@@ -32,7 +32,7 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("random")
                     }
-            }.tag(TabState.random)
+                }.tag(TabState.random)
 
             Text("history")
                 .tabItem {
@@ -41,7 +41,7 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("history")
                     }
-            }.tag(TabState.history)
+                }.tag(TabState.history)
 
             Text("mypage")
                 .tabItem {
@@ -50,7 +50,7 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("mypage")
                     }
-            }.tag(TabState.mypage)
+                }.tag(TabState.mypage)
         }
     }
 }

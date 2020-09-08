@@ -10,7 +10,7 @@ struct HomeView: View {
                     HomeItemCell(item: item)
                         .onAppear {
                             self.presenter.loadNext(item: item)
-                    }
+                        }
                 }
             }
             .navigationBarTitle("新着記事")

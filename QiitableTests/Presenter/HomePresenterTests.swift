@@ -1,6 +1,5 @@
 import XCTest
 @testable import Qiitable
-import StubKit
 
 class HomePresenterrTests: XCTestCase {
     var subject: HomePresenterImpl!
@@ -19,7 +18,7 @@ class HomePresenterrTests: XCTestCase {
 
     func test_onAppear() {
         XCTxContext("リクエストが成功したとき、記事が取得されること") {
-            let stub = try! Stub.make(Item.self)
+            let stub = ItemFixture.test()
             useCase.fetchHandler = { offset, completion in
                 completion(.success([stub]))
                 XCTAssertEqual(offset, 1)
@@ -45,13 +44,9 @@ class HomePresenterrTests: XCTestCase {
     func test_loadNext() {
         XCTxContext("最後のセルのとき、正常にリクエストされること") {
             var items: [Item] = (0..<20).map { num in
-                return try! Stub.make(Item.self) {
-                    $0.set(\.id, value: String(num))
-                }
+                return ItemFixture.test(id: String(num))
             }
-            let lastItem = try! Stub.make(Item.self) {
-                $0.set(\.id, value: "last-item-id")
-            }
+            let lastItem = ItemFixture.test(id: "last-item-id")
             items.append(lastItem)
             useCase.fetchHandler = { offset, completion in
                 completion(.success(items))
@@ -74,9 +69,7 @@ class HomePresenterrTests: XCTestCase {
         }
         XCTxContext("最後のセルでないとき、リクエストされないこと") {
             let items: [Item] = (0..<20).map { num in
-                return try! Stub.make(Item.self) {
-                    $0.set(\.id, value: String(num))
-                }
+                return ItemFixture.test(id: String(num))
             }
 
             useCase.fetchHandler = { offset, completion in

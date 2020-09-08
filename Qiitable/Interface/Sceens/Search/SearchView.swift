@@ -10,10 +10,10 @@ struct SearchTopView: View {
                     "気になる技術を調べよう！",
                     text: $presenter.searchText,
                     onEditingChanged: { _ in
-                }) {
+                    }) {
                     self.presenter.onCommit()
                 }.textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
+                .padding()
                 Spacer()
 
                 List {

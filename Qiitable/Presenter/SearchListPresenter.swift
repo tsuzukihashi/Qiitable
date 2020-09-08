@@ -4,6 +4,7 @@ protocol SearchListPresenter: ObservableObject {
     var searchText: String { get set }
     var items: [Item] { get set }
     func onAppear()
+    func loadNext(item: Item)
 }
 
 final class SesarchListPresenterImpl: SearchListPresenter {
@@ -17,11 +18,24 @@ final class SesarchListPresenterImpl: SearchListPresenter {
     }
 
     func onAppear() {
-        useCase.fetch(query: searchText, page: 1) {[weak self] result in
+        fetch(mode: .initial)
+    }
+
+    func loadNext(item: Item) {
+
+    }
+
+    private func fetch(mode: FetchMode) {
+        useCase.fetch(query: searchText, page: mode.page) {[weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let items):
-                self.items = items
+                switch mode {
+                case .initial:
+                    self.items = items
+                case .next:
+                    self.items.append(contentsOf: items)
+                }
             case .failure(let error):
                 print(error.localizedDescription)
             }

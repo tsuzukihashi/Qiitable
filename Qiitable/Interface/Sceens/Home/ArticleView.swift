@@ -1,5 +1,4 @@
 import SwiftUI
-import StubKit
 
 struct ArticleView: View {
     let item: Item
@@ -12,10 +11,7 @@ struct ArticleView: View {
 
 struct ArticleView_Previews: PreviewProvider {
     static var previews: some View {
-        let stub = try? Stub.make(Item.self) {
-            $0.set(\.title, value: "ポケモンマスター")
-        }
-        return ArticleView(item: stub!)
+        return ArticleView(item: ItemFixture.test())
             .previewLayout(.sizeThatFits)
     }
 }

@@ -21,8 +21,6 @@ VIPER
 ## ライブラリ紹介
 - swiftlint
 - mockolo
-- stubkit
 ## 管理ツール
 - mint
-- carthage
 - swift package manager

@@ -1,6 +1,5 @@
 import XCTest
 @testable import Qiitable
-import StubKit
 import Combine
 
 class ItemRepositoryTests: XCTestCase {
@@ -14,7 +13,7 @@ class ItemRepositoryTests: XCTestCase {
 
     func test_fetch() {
         XCTxContext("成功したとき") {
-            let item = try! Stub.make(Item.self)
+            let item = ItemFixture.test()
 
             connection.callHandler = { req in
                 if let req = req as? ItemRequest {
@@ -55,7 +54,7 @@ class ItemRepositoryTests: XCTestCase {
 
     func test_search() {
         XCTxContext("成功したとき") {
-            let item = try! Stub.make(Item.self)
+            let item = ItemFixture.test()
 
             connection.callHandler = { req in
                 if let req = req as? ItemRequest {

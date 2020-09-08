@@ -1,5 +1,4 @@
 import Foundation
-import StubKit
 
 /// @mockable
 protocol RootPresenter: ObservableObject {

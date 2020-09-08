@@ -36,6 +36,6 @@ final class ItemRepositoryImpl: ItemRepository {
                 }
             }) { items in
                 completion(.success(items))
-        }.store(in: &cancellables)
+            }.store(in: &cancellables)
     }
 }
